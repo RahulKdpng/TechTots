@@ -59,7 +59,7 @@ header h1 {
 }
 
 #devImage {
-    width: 100%; /* Adjust size as needed */
+    width: 70%; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     margin-top: 10px; /* Space above the image */
     border-radius: 8px; /* Optional: Rounded corners */

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #dadfd9;
+    color: rgb(109, 109, 109);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+#logo {
+    padding-top: 17px;
+    width: 15%; /* Adjust size as needed */
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+#chatContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* Change direction to row */
+    padding: 10px;
+    position: relative; /* To position button inside chatContainer */
+}
+
+#devSide {
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: relative; /* Ensure it doesn’t overlap */
+}
+
+#chatBox {
+    flex: 1;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Default alignment */
+    margin-bottom: 10px;
+    background-image: url(res/Picture8.png); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    position: relative; /* Relative positioning for button placement */
+}
+
+#pressImageButton {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Absolute positioning for image */
+    bottom: 10px; /* Distance from the bottom of chatContainer */
+    right: 10px; /* Distance from the right edge */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: transparent; /* Ensure no background color */
+    border: none; /* No border */
+    pointer-events: auto; /* Ensure the image can be clicked */
+}
+
+#devSide p {
+    margin: 0;
+    font-weight: bold;
+}
+#devImage {
+    width: 30%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above the image */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.message {
+    max-width: 80%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    clear: both; /* Ensure messages don’t overlap */
+}
+
+.message.student {
+    background-color: #d1e7dd;
+    align-self: flex-end; /* Right side */
+}
+
+.message.teacher {
+    background-color: #f8d7da;
+    align-self: flex-start; /* Left side */
+}
+
+.message.coding {
+    background-color: #e2e3e5;
+    align-self: center; /* Center for code snippets */
+}

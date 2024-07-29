@@ -36,13 +36,13 @@ header h1 {
 #chatContainer {
     flex: 1;
     display: flex;
-    flex-direction: row; /* Change direction to row */
+    flex-direction: row; /* Align devSide and chatBox side by side */
     padding: 10px;
-    position: relative; /* To position button inside chatContainer */
+    position: relative;
 }
 
 #devSide {
-    width: 200px; /* Adjust width as needed */
+    width: 250px; /* Adjust width as needed */
     padding: 10px;
     background-color: #f0f0f0;
     border-right: 2px solid #ccc;
@@ -53,10 +53,22 @@ header h1 {
     position: relative; /* Ensure it doesn’t overlap */
 }
 
+#devSide p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#devImage {
+    width: 100%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above the image */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
 #chatBox {
-    flex: 1;
+    flex: 1; /* Take up the remaining space */
     padding: 10px;
-    height: 400px;
+    height: 300px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -65,7 +77,6 @@ header h1 {
     background-image: url(res/Picture8.png); /* Background image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
-    position: relative; /* Relative positioning for button placement */
 }
 
 #pressImageButton {
@@ -80,15 +91,11 @@ header h1 {
     pointer-events: auto; /* Ensure the image can be clicked */
 }
 
-#devSide p {
-    margin: 0;
-    font-weight: bold;
-}
-#devImage {
-    width: 30%; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10px; /* Space above the image */
-    border-radius: 8px; /* Optional: Rounded corners */
+footer {
+    background-color: #bdbdbd;
+    color: white;
+    text-align: center;
+    padding: 3px;
 }
 
 .message {
@@ -98,20 +105,15 @@ header h1 {
     border-radius: 10px;
     font-size: 14px;
     line-height: 1.4;
-    clear: both; /* Ensure messages don’t overlap */
 }
 
-.message.student {
+.message.right {
     background-color: #d1e7dd;
     align-self: flex-end; /* Right side */
 }
 
-.message.teacher {
+.message.left {
     background-color: #f8d7da;
     align-self: flex-start; /* Left side */
 }
 
-.message.coding {
-    background-color: #e2e3e5;
-    align-self: center; /* Center for code snippets */
-}

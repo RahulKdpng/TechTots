@@ -8,13 +8,18 @@
 </head>
 <body>
     <header>
+        <button id="backButton">Back to Home</button>
         <h1>Add or Remove Chapters</h1>
     </header>
     <div id="formContainer">
-        <label for="chapterName">Chapter Name:</label>
-        <input type="text" id="chapterName" placeholder="Enter chapter name">
-        <label for="chapterContent">Chapter Content (message format: sender-->message):</label>
-        <textarea id="chapterContent" rows="10" placeholder="Enter chapter content"></textarea>
+        <div class="form-group">
+            <label for="chapterName">Chapter Name:</label>
+            <input type="text" id="chapterName" placeholder="Enter chapter name">
+        </div>
+        <div class="form-group">
+            <label for="chapterContent">Chapter Content (message format: sender-->message):</label>
+            <textarea id="chapterContent" rows="10" placeholder="Enter chapter content"></textarea>
+        </div>
         <button id="saveChapter">Save Chapter</button>
         
         <h2>Existing Chapters</h2>

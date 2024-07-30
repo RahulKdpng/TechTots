@@ -9,21 +9,25 @@
 <body>
     <header>
         <img src="res/LOGO.png" alt="Logo" id="logo">
-        <h1 id="title" style="font-size: 150%;">Student Summary</h1>
+        <h1 id="title" style="font-size: 150%;">Phython Class</h1>
     </header>
-    <div id="chatContainer">
+    <div id="mainContainer">
         <div id="devSide">
-            <p>Developer's Notes</p>
-            <img id="devImage" src="./res/dev-image.png" alt="Developer Image">
+            <p>Chapters</p>
+            <!-- <img id="devImage" src="res/dev-image.png" alt="Developer Image"> -->
+            <div id="chapters">
+            <!-- Buttons will be dynamically generated here -->
+            </div>
         </div>
-        <div id="chatBox">
-            <!-- Chat messages will appear here -->
+        <div id="chatContainer">
+            <div id="chatBox">
+                <!-- Chat messages will appear here -->
+            </div>
+            <button id="nextMessageButton">Next Message</button>
         </div>
-        <!-- Image button positioned outside of chat box but inside chatContainer -->
-        <img id="pressImageButton" src="./res/press-button.png" alt="Press Button">
     </div>
     <footer>
-        <p>&copy; 2024 Digital Wizards Academy</p>
+        <p>&copy; 2024 TechTots | Sushmita's Academy</p>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,76 @@
+student--> Hey, man! you there?
+teacher-->Hi, buddy
+student-->Hey I want to know everything about loops today!
+teacher--> I can tell you everything. But the question is, can you take it all at once?
+student--> That vast huh?
+teacher--> hmmm-mmm, so let's see how to write loops in Python first.
+student--> Man, I am not even surprised anymore!!
+teacher--> Get used to it! Anyway, let us start with the first one, while loop!!
+student--> Okay then, let us start now!!
+teacher--> well, remember my hacking prank??
+student-->yeah, I remember it very well!!
+student--> percentage=0
+		   repeat till percentage <= 100:
+		       print ("hacking 10:45:65: 78:98", percentage, "%")
+			   percentage = percentage + 20
+		   print ("System hacked, and you are under the watch of the Red Eye Now!")
+teacher-->okayed let me make the changes.
+teacher--> percentage=0
+		   while percentage <= 100:
+		       print ("hacking 10:45:65: 78:98", percentage, "%")
+			   percentage = percentage + 20
+		   print ("System hacked, and you are under the watch of the Red Eye Now!")
+teacher--> and we are done now!!
+student-->seriously!!
+teacher--> yup! cuz whenever Python finds a while in the program it knows there is a loop.
+student--> what is while loop then??
+teacher--> while is used to repeatedly execute instructions as long as condition is true.
+student-->hmm, okay!! so here, python starts with making the variable percentage.
+			percentage=0 # initialisation of a variable 
+teacher-->so in this, we will replace repeat till with the word while.
+student--> hmm-mm listening!!
+teacher--> Then in line 2, it checks the condition inside while.
+teacher-->percentage=0
+		   while percentage <= 100: #condition 
+student--> And that is True cuz, the value of percentage is 0, which is less than 100, so python starts the loop!!
+teacher--> Right, and inside it, python displays the message.
+			percentage=0
+		   repeat till percentage <= 100:
+		       print ("hacking 10:45:65: 78:98", percentage, "%”) #displays the message.
+teacher--> Next, it increases the percentage by 20.
+teacher-->percentage=0
+		   while percentage <= 100:
+		       print ("hacking 10:45:65: 78:98", percentage, "%")
+			   percentage = percentage + 20 #increment of the variable 
+student--> Now, Python goes back to the first line, of the loop.
+teacher--> And there, it checks the condition again!!
+student--> Which is True again, as 20 is less than 100.
+teacher--> percentage=0
+		   while percentage <= 100: #percentage becomes 20 so we get the condition True.
+		       print ("hacking 10:45:65: 78:98", percentage, "%")
+			   percentage = percentage + 20 
+teacher--> Yup!! so python goes inside the loop again.
+student--> And this keeps on happen until the percentage is less than or equal to 100.
+teacher--> hmm-mm, but when the value gets to 120, the condition becomes False.
+student--> Right!!
+teacher-->That's why Python skips the loop and moves to the instruction below it.
+student--> Cool!! so I guess that's it for the while loop!!
+teacher--> just one thing, let us remove the last two lines from the code.
+student--> you mean percentage = percentage +20
+teacher--> want to guess what will happen now?
+student--> well, python will start the loop as percentage <= 100 is True at first.
+teacher--> yup, no Suprise there.
+student--> Right, then inside the loop, it will display the hacking message.
+teacher--> True, go ahead!!
+student--> wait a sec!! you are not increasing the value of percentage anywhere!!
+teacher--> Exactly, so percentage <= 100 is going to be True always, as percentage is 0 every time.
+student--> Meaning, I will be an infinite loop.
+teacher--> Bingo, so it is very important to increase the value of percentage and now we are done with this!!
+student--> Then I got to go.
+teacher--> Where are you running off too dude??
+student--> what do you mean, chapter over right??
+teacher--> No child, it’s now coding time!!
+student--> okay let’s begin, got to go soon to prank my friends also with this cool feature now 
+teacher--> okay
+
+

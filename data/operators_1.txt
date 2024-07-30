@@ -1,0 +1,102 @@
+student-->Hey man, I think there is something wrong with python.
+teacher-->Trust me bro, whatever it is. Python is right.
+techer--> You must be missing something.
+student--> Then what is 3+5*2?
+teacher--> 13
+student--> What, how? It must be 16?
+student--> Like, 3+5 will give us 8, and then we multiply 8 by 2 to get 16.
+teacher--> Okay, I see what is the problem here. You don't know about BEMDAS.
+student--> What the fish is that?
+teacher--> Stop freaking out, man. Let's just look at what BEMDAS stands for.
+           B - BRACKETS
+		   E - EXPONENT
+		   M - MULTIPLICATION
+		   D - DIVISION
+		   A - ADDITION
+		   S - SUBSTRACTION
+student--> But how is this gonna solve my problem?
+teacher--> Well, this is more like a rule for python.
+teacher--> So while doing Math, python solves the symbols in this order.
+student--> Oh! But bro, i will need more than that.
+teacher--> Okay, Let's take an example.
+           9 + 7 * (8 - 4) / 2 - 3 ** 2
+student--> That looks scary!!
+teacher--> Don't worry. we will go step by step.
+teacher--> So, Python first solves the Brackets.
+student--> You mean (8 - 4)?
+teacher--> Yup!!
+teacher--> 9 + 7 * (8 - 4) / 2 - 3 ** 2
+           9 + 7 * 4 / 2 - 3 ** 2
+teacher--> Then it goes for the EXPONENT.
+student--> What is that??
+teacher--> It is Python's way pf calling power. The symbol is **.
+student--> got it!! so we solve 3 ** 2 next, and that is 9.
+teacher--> 9 + 7 * (8 - 4) / 2 - 3 ** 2
+           9 + 7 * 4 / 2 - 3 ** 2
+		   9 + 7 * 4 / 2 - 9
+teacher--> Next, Python either multiplies or divides.
+teacher--> And it depends on what comes first while moving from left to right.
+student--> So, in 9 + 7 * 4 / 2 - 9, multiplication comes first.
+teacher--> Yup, and that is why python multiplies next.
+           9 + 7 * (8 - 4) / 2 - 3 ** 2
+           9 + 7 * 4 / 2 - 3 ** 2
+		   9 + 7 * 4 / 2 - 9
+		   9 + 28 / 2 - 9
+student--> Now, it is division time!!
+teacher--> 9 + 7 * (8 - 4) / 2 - 3 ** 2
+           9 + 7 * 4 / 2 - 3 ** 2
+		   9 + 7 * 4 / 2 - 9
+		   9 + 28 / 2 - 9
+           9 + 14 - 9		   
+teacher--> Next, Python either adds or substracts.
+student--> let me guess, it depends on what comes first while moving from left to right.
+teacher--> Correct And here + comes first.
+student--> So, we add??
+teacher--> 9 + 7 * (8 - 4) / 2 - 3 ** 2
+           9 + 7 * 4 / 2 - 3 ** 2
+		   9 + 7 * 4 / 2 - 9
+		   9 + 28 / 2 - 9
+           9 + 14 - 9	
+		   23 - 9
+teacher--> Finally pythin substracts,
+           9 + 7 * (8 - 4) / 2 - 3 ** 2
+           9 + 7 * 4 / 2 - 3 ** 2
+		   9 + 7 * 4 / 2 - 9
+		   9 + 28 / 2 - 9
+           9 + 14 - 9	
+		   23 - 9
+		   14
+teacher--> So, here is how it all went.
+student--> You know what, it all makes sense now.
+student--> In my case of 3 + 5 * 2 Python first multiplies and then adds. That's why the result was 13.
+teacher--> Yup, and if you want python to add first, just put brackets around 3 and 5.
+           (3 + 5) * 2
+student--> Got it, Thanks man!!!!!
+teacher--> now again here comes our quiz time, ready for it!!
+student--> I am born ready for it go ahead with your questions.
+teacher--> so today I have 3 questions for you to solve
+student--> okay, lets do it!!
+teacher--> An arithmetica soldier uses the magical symbols to reduce an enemy's strength to 6. use the correct + and - symbols in the right gaps to see .
+           strength= 15 (blank) 3 - 5 (blank) 7
+student--> So, the equation should be: 15+3−5−7
+teacher--> well done!! time for next one
+teacher--> commander uses * and / on the enemies. their final strength is less than 5.
+           enemy_strength=34/17*3/6
+		   option1: yes
+		   option2: No
+student--> The correct answer is option1: yes
+teacher--> here come another one, a legendary arthmetica sorcerer uses the symbol % to attck! rearrange the below lines to show ho he reduces the emeny's strength to 0.
+           34/17*3%6
+		   give step wise evaluation
+student--> 34/17*3%6
+           2*3%6
+		   6%6
+		   0
+teacher--> well done, now lets try some lab and try to solve some of the basics easy question.
+student--> sure, thanks..
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Chapter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add or Remove Chapters</h1>
+    </header>
+    <div id="formContainer">
+        <label for="chapterName">Chapter Name:</label>
+        <input type="text" id="chapterName" placeholder="Enter chapter name">
+        <label for="chapterContent">Chapter Content (message format: sender-->message):</label>
+        <textarea id="chapterContent" rows="10" placeholder="Enter chapter content"></textarea>
+        <button id="saveChapter">Save Chapter</button>
+        
+        <h2>Existing Chapters</h2>
+        <div id="existingChapters">
+            <!-- Existing chapters will be dynamically generated here -->
+        </div>
+    </div>
+    <script src="add-chapter.js"></script>
+</body>
+</html>

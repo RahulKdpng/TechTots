@@ -72,5 +72,9 @@ function loadChapters() {
     });
 }
 
+document.getElementById('addChapterButton').addEventListener('click', function() {
+    window.location.href = 'add-chapter.html'; // Redirect to add-chapter.html
+});
+
 nextMessageButton.addEventListener('click', displayNextMessage);
 loadChapters();

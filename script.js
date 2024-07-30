@@ -1,3 +1,11 @@
+// Predefined chapters
+const predefinedChapters = [
+    { name: "naming a variable", fileName: "naming_a_variable.txt" },
+    { name: "operators 1", fileName: "operators_1.txt" },
+    { name: "operators 2", fileName: "operators_2.txt" },
+    { name: "while loop", fileName: "while_loop.txt" }
+];
+
 // Function to load conversation from a text file
 async function loadConversation(fileName) {
     try {
@@ -60,9 +68,24 @@ function loadChapter(chapterFile, buttonElement) {
     });
 }
 
+// Function to initialize chapters
+function initializeChapters() {
+    const chapters = JSON.parse(localStorage.getItem('chapters')) || [];
+
+    // Add predefined chapters if not already present
+    predefinedChapters.forEach(predefinedChapter => {
+        if (!chapters.some(chapter => chapter.name === predefinedChapter.name)) {
+            chapters.push(predefinedChapter);
+        }
+    });
+
+    localStorage.setItem('chapters', JSON.stringify(chapters));
+    return chapters;
+}
+
 function loadChapters() {
     const chaptersDiv = document.getElementById('chapters');
-    const chapters = JSON.parse(localStorage.getItem('chapters')) || [];
+    const chapters = initializeChapters();
 
     chapters.forEach(chapter => {
         const button = document.createElement('button');

@@ -71,6 +71,8 @@ document.getElementById('saveChapter').addEventListener('click', () => {
     document.getElementById('chapterName').value = '';
     document.getElementById('chapterContent').value = '';
 });
-
+document.getElementById('backButton').addEventListener('click', function() {
+    window.location.href = 'index.html'; // Redirect to index.html
+});
 // Initial call to populate existing chapters
 refreshChapters();

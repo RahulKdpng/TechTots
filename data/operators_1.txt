@@ -8,12 +8,12 @@ student--> Like, 3+5 will give us 8, and then we multiply 8 by 2 to get 16.
 teacher--> Okay, I see what is the problem here. You don't know about BEMDAS.
 student--> What the fish is that?
 teacher--> Stop freaking out, man. Let's just look at what BEMDAS stands for.
-teacher-->  B - BRACKETS
-teacher-->  E - EXPONENT
+teacher--> B - BRACKETS
+teacher--> E - EXPONENT
 teacher--> M - MULTIPLICATION
-teacher-->  D - DIVISION
-teacher-->  A - ADDITION
-teacher-->  S - SUBSTRACTION
+teacher--> D - DIVISION
+teacher--> A - ADDITION
+teacher--> S - SUBSTRACTION
 student--> But how is this gonna solve my problem?
 teacher--> Well, this is more like a rule for python.
 teacher--> So while doing Math, python solves the symbols in this order.

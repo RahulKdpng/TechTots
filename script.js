@@ -28,19 +28,24 @@ const nextMessageButton = document.getElementById('nextMessageButton');
 // Function to display the next message
 function displayNextMessage() {
     if (currentMessageIndex < messages.length) {
-        const messageElement = document.createElement('div');
-        messageElement.classList.add('message');
-
         const messageLine = messages[currentMessageIndex];
         const [sender, ...messageParts] = messageLine.split('-->');
         const messageText = messageParts.join(' ').trim();
+        const senderClass = sender.trim() === 'student' ? 'right' : 'left';
 
-        messageElement.classList.add(sender.trim() === 'student' ? 'right' : 'left');
-        messageElement.textContent = messageText;
+        // Check if the last message element belongs to the same sender
+        const lastMessageElement = chatBox.lastElementChild;
+        if (lastMessageElement && lastMessageElement.classList.contains(senderClass)) {
+            lastMessageElement.innerHTML += `<br>${messageText}`;
+        } else {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', senderClass);
+            messageElement.innerHTML = messageText;
 
-        chatBox.appendChild(messageElement);
+            chatBox.appendChild(messageElement);
+        }
+
         chatBox.scrollTop = chatBox.scrollHeight;
-
         currentMessageIndex++;
     } else {
         nextMessageButton.style.display = 'none';
@@ -68,7 +73,6 @@ function loadChapter(chapterFile, buttonElement) {
     });
 }
 
-// Function to initialize chapters
 function initializeChapters() {
     const chapters = JSON.parse(localStorage.getItem('chapters')) || [];
 

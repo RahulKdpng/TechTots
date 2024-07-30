@@ -1,25 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
 header {
     background-color: #dadfd9;
     color: rgb(109, 109, 109);
     display: flex;
     align-items: center;
     padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 #logo {
-    padding-top: 17px;
-    width: 15%; /* Adjust size as needed */
+    width: 15%;
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+#logo {
+    width: 15%;
     height: auto;
     position: absolute;
     left: 10px;
@@ -33,24 +35,22 @@ header h1 {
     text-align: center;
 }
 
-#chatContainer {
-    flex: 1;
+#mainContainer {
     display: flex;
-    flex-direction: row; /* Align devSide and chatBox side by side */
-    padding: 10px;
-    position: relative;
+    flex: 1;
+    flex-direction: row;
+    height: calc(100vh - 80px - 30px); /* 80px for header + 30px for footer */
 }
 
 #devSide {
-    width: 250px; /* Adjust width as needed */
+    width: 250px;
     padding: 10px;
     background-color: #f0f0f0;
     border-right: 2px solid #ccc;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    position: relative; /* Ensure it doesn’t overlap */
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
 }
 
 #devSide p {
@@ -58,37 +58,79 @@ header h1 {
     font-weight: bold;
 }
 
-#devImage {
-    width: 30%; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10px; /* Space above the image */
-    border-radius: 8px; /* Optional: Rounded corners */
+#chapters {
+    margin-top: 10px;
+}
+
+#chapters button {
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#chapters button:hover {
+    background-color: #f0f0f0;
+}
+
+#chapters button:active {
+    background-color: darkgreen;
+    border: 2px solid black;
+    color: white;
+}
+
+#chatContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    background-image: url(res/Picture8.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 #chatBox {
-    flex: 1; /* Take up the remaining space */
-    padding: 10px;
-    height: 300px;
+    width: 100%;
+    flex: 1;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Default alignment */
+    align-items: flex-start;
     margin-bottom: 10px;
-    background-image: url(res/Picture8.png); /* Background image */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
 }
 
-#pressImageButton {
-    width: 150px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Absolute positioning for image */
-    bottom: 10px; /* Distance from the bottom of chatContainer */
-    right: 10px; /* Distance from the right edge */
-    cursor: pointer; /* Pointer cursor on hover */
-    background-color: transparent; /* Ensure no background color */
-    border: none; /* No border */
-    pointer-events: auto; /* Ensure the image can be clicked */
+#nextMessageButton {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+#nextMessageButton:hover {
+    background-color: #f0f0f0;
+}
+
+#nextMessageButton:active {
+    background-color: darkgreen;
+    border: 2px solid black;
+    color: white;
 }
 
 footer {
@@ -96,6 +138,7 @@ footer {
     color: white;
     text-align: center;
     padding: 3px;
+    flex-shrink: 0; /* Ensure footer does not shrink */
 }
 
 .message {
@@ -103,17 +146,16 @@ footer {
     padding: 5px 10px;
     margin: 5px 0;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.4;
 }
 
 .message.right {
     background-color: #d1e7dd;
-    align-self: flex-end; /* Right side */
+    align-self: flex-end;
 }
 
 .message.left {
     background-color: #f8d7da;
-    align-self: flex-start; /* Left side */
+    align-self: flex-start;
 }
-

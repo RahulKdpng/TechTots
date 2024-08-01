@@ -60,8 +60,12 @@ header h1 {
 
 #chapters {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns all child elements (buttons) to the left */
 }
 
+/* Style for chapter buttons */
 #chapters button {
     width: 100%;
     background-color: white;
@@ -73,9 +77,10 @@ header h1 {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
+    text-align: left; /* Aligns text inside buttons to the left */
 }
 
+/* Button hover and active states */
 #chapters button:hover {
     background-color: #f0f0f0;
 }

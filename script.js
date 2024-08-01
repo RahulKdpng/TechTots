@@ -1,9 +1,14 @@
 // Predefined chapters
 const predefinedChapters = [
-    { name: "naming a variable", fileName: "naming_a_variable.txt" },
-    { name: "operators 1", fileName: "operators_1.txt" },
-    { name: "operators 2", fileName: "operators_2.txt" },
-    { name: "while loop", fileName: "while_loop.txt" }
+    { name: "6. Data Type", fileName: "data_type.txt" },
+    { name: "7. naming a variable", fileName: "naming_a_variable.txt" },
+    { name: "8. operators 1", fileName: "operators_1.txt" },
+    { name: "9. operators 2", fileName: "operators_2.txt" },
+    { name: "10. String 1", fileName: "string_1.txt" },
+    { name: "11. String 2", fileName: "string_2.txt" },
+    { name: "24. while loop", fileName: "while_loop.txt" }
+    
+    
 ];
 
 // Function to load conversation from a text file

@@ -84,3 +84,8 @@ teacher-->output: True
 student-->we can convert string to boolean, it will return False if the string is empty else it will return true.
 teacher-->so brilliant!!
 student-->Thanks.
+
+
+
+
+

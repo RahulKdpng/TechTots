@@ -1,0 +1,123 @@
+student--> SOS!!Help!!SOS!!
+teacher--> Hey!! stop Don't jump off the roof.
+student--> Ummmm!!! what?
+teacher--> Uh-Oh! did I guess wrong??
+student--> Why the hack would I jump off anywhere?
+teacher--> Er,um... you know.
+student--> No, I don't know. Ugh, You and your jokes!!
+student--> Anyway, does this program makes sense to you??
+student--> sum="5" + "5"
+student--> print(sum)
+teacher--> Yup, we can't read about it recently.
+student--> But isn't that weird?
+student--> I mean, to do the math on numbers within quotes, like "5", we first convert them into integers, right??
+teacher--> That's right! But we do the conversion only when we are adding a number and a string like this,
+teacher--> sum= 5 + int('5')
+teacher--> print(sum)
+teacher--> output: 10
+teacher--> However, the + operator works uniquely with two strings.
+student--> Oh, is that so?
+teacher--> Yup!! It combines the two strings. Here, take a look.
+teacher--> word= 'water' + 'fall'
+teacher--> print(word)
+teacher--> output: waterfall
+student--> Hmm, the two strings became one interesting!!
+teacher--> We call this concatenation.
+student--> Another scary word!!
+teacher--> A little bit, yeah. But hey, let me show you something cool.
+teacher--> apples= 5 
+teacher--> print('I ate '+str(apples) + ' apples.')
+teacher--> output: I ate 5 apples.
+student--> Okayyy!!
+student--> So here, the variable apple holds 5 at first. But str(apples) converts it into a string value '5'.
+teacher--> Exactly!!
+teacher--> And line 2 of the program becomes print('I ate '+ '5' +' apples'). Which displays I ate 5 apples.
+student--> O, I see what you did there!! As we can only add strings together, you first converted the number into a string.
+teacher--> You got that right, buddy!!
+teacher--> We also have alternative ways to do this.
+student--> As if one is not enough!!
+teacher--> Silly!! Python has something called join().
+student--> Which joins string right??
+teacher--> yesssss!!
+teacher--> Using the join method in Python, you can concatenate multiple strings with a specified separator. 
+teacher--> The join method can be particularly useful when you want to combine multiple string variables into a single string with a specific delimiter. 
+teacher--> var1= 'welcome'
+teacher--> var2= 'Theo'
+teacher--> print("".join([var1,var2]))
+teacher--> output: Welcome Theo 
+student--> That's really cool!!
+teacher--> You can even use join with more than two variables like this,
+teacher--> var3 = "Python"
+teacher--> var4 = "is"
+teacher--> var5 = "great"
+teacher--> result = " ".join([var3, var4, var5])
+teacher--> output: Python is great 
+teacher--> Now tell me output of this:
+teacher--> result = ", ".join([var3, var4, var5])
+student--> Let me Guess
+teacher--> It is Python, is, great
+teacher--> It separate the variables with a comma and a space.
+student--> Good one What's next?
+teacher--> At last, Python also has something called format().
+student--> Oh! What is that??
+teacher--> It is used to insert values in a specified place. We can specify the place by putting {}, Like this.
+teacher--> var1 = "Welcome" 
+teacher--> var2 = "Theo" 
+teacher--> print("{} {}".format(var1, var2)) 
+teacher--> output: Welcome Theo 
+student--> So, we can use format to concatenate strings too, right??
+teacher--> Exactly!! We can concatenate strings with string and numbers.
+teacher--> var1 = "Zo" 
+teacher--> var2 = 19 
+teacher--> print("{} {}".format(var1, var2))
+teacher--> Zo 19
+student--> Great!!
+teacher--> Now tell me the output:
+teacher--> r, l, b = 1.5678, 10.5, 12.66
+teacher--> name, age, salary = 'Rakshita', 30, 53000.55
+teacher--> print('radius = {} length = {} breadth ={}'.format(r, l, b))
+teacher--> print('name = {} age = {} salary = {}'.format(name, age, salary))
+teacher--> print('radius = {2} length = {1} breadth ={0}'.format(r, l, b))
+teacher--> print('age={1} salary={2} name={0}'.format(name, age, salary))
+student--> radius = 1.5678 length = 10.5 breadth =12.66
+student--> name = Rakshita age = 30 salary = 53000.55
+student--> radius = 12.66 length = 10.5 breadth =1.5678
+student--> age=30 salary=53000.55 name=Rakshita
+student--> So, what about the other math symbols? Like, can we use the minus(-) operator on two strings?
+teacher--> Nuh-uh, you can't subtract or divide strings, but you can use the * operator.
+student--> String multiplication? Boy, it keeps getting interesting!!!!!
+teacher--> Glad you are enjoying this! So, in python, you can multiply a number by a string. Like this,
+teacher--> word= 'ha'*3
+teacher--> print(word)
+teacher--> output: hahaha
+student--> Hmmm!! Seems like Python just repeated the string 'ha' three times.
+teacher--> Correct!! When we multiply a string by a number, it repeats itself that many times.
+student--> So multiplication in strings basically means repetition Roger that!!
+student--> But dude! I got a doubt. Look at this!!
+student--> word ='haha' * 0.5
+student--> print(string)
+student--> will it display anything??
+student--> I guess it's a no then,
+teacher--> Of course! You can't multiply strings with a float number, and here is why.
+teacher--> word='a' * 0.5
+teacher--> print(word)
+teacher--> Can you tell the output here?
+student--> Ummmm, an error???
+teacher--> Exactly, as you can't cut 'a' in half!!
+student--> Okay, so no multiplying strings with a float number. cool.
+teacher--> Now I got one Last thing to tell you. Look at this program.
+teacher--> string_one='ba'
+teacher--> string_two='na'
+teacher--> print(string_one + string_two * 2)
+teacher--> What will the Python display?
+student--> Well, do we apply BEMDAS here too?
+teacher--> Bingo!! Good job, buddy you are almost there.
+student--> Then it's simple! First, python will multiply.
+teacher--> And after that comes the addition. Correct!!
+student--> Perfect!! So hey, thanks for the help!!
+teacher--> Quiz time now
+student--> An enemy general plans an attack on your Army's base camp! You ask why to send the camp a warning. Fill in the gaps to see how she did it.
+student--> print("Enemy gets" (_____) (_______) )
+student--> option: + , * , "into camp" , into_camp
+teacher--> correct answer is: + , "into camp"
+teacher--> Time for coding now!!

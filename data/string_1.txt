@@ -1,0 +1,89 @@
+student--> Knock, Knock!!
+teacher--> Who is there?
+student--> A Scary Python!!
+teacher--> uh-oh, what happened?
+student--> Same old story. It's Python playing tricks on me!!
+teacher--> Again!!
+teacher--> Well, what happened this time?
+student--> Nothing much, I was just trying to display a simple message.
+student--> print('Hey! It's me')
+student--> But when I run it, BAAM!! it got an error!!
+student--> print('Hey! It's me')
+student--> SyntaxError: invalid syntax
+teacher--> That is cuz you are doing it wrong.
+student--> I figured out that much, Sherlock.
+teacher--> Wait, ease up a little.
+teacher--> Your mistake was to put the message in between single quotes.
+student--> What??
+student--> But we can put string in between single quotes!!
+teacher--> Not when they contain an apostrophe or a single quote in them.
+student--> Huhhh?
+teacher--> Yup!! the Single Quote at the beginning tells Python to start a string.
+teacher--> And the Second single quote after t tells python to end the string.
+student--> So Python thinks that the string contains just 'Hey, it'?
+teacher--> Exactly!! And the letter after the second quote is not a part of the string.
+student--> Meaning the red part is unwanted here!!
+teacher--> Right, and that's why Python shows an error.
+student--> But how to avoid it, man??
+teacher--> Just put the message in between double-quotes.
+teacher--> print("Hey! It's me!")
+teacher--> output: Hey! It's me!
+student--> So it doesn't matter if we put the string in between single quotes??
+teacher--> Nope, cuz the backslash makes Python ignore the single-quote after it.
+student--> Crazy!!
+student--> Guess I can do the same for double-quotes.
+teacher--> Absolutely!!
+teacher--> print("Zo asked, \"How are you?\"")
+teacher--> output: Zo asked, "How are you?"
+teacher--> We call this feature escaping.
+student--> Huh, an easy name to remember, Surprising!!
+teacher--> Yeah, tell me about it.
+teacher--> Anyway, there is also \n, and we use it like this.
+teacher--> print("Hi there! \nHow are you?")
+teacher--> output: Hi there!!
+teacher--> How are you?
+student--> I see, Python displayed the words after \n in a new line.
+teacher--> Cool feature, right??
+student--> Uh-hhhhuhh. But I know another way of doing this.
+teacher--> Is it the triple quotes trick?
+student--> Yup!!
+teacher--> print('''I met Marry.
+teacher--> She looks great''')
+student--> Inside the triple quotes, I can press Enter each time I want to start a new line.
+teacher--> And Python displays the sentences in different lines.
+teacher--> print('''I met Marry.
+teacher--> She looks great''')
+teacher--> output: I met Marry.
+teacher--> She looks great
+student--> Exactly
+student--> But thanks for the help, man!!
+teacher--> No problem, buddy!!
+teacher--> now quiz time!!
+student--> fill in the blanks to display the message at 1900 hours!!
+student--> message_start="Assemble at"
+student--> time=1500
+student--> message_end=____________
+student--> print(message_start,__________,message_end)
+student--> options: hours , "hours" , time , "1500"
+teacher--> Answer is "hours" and time 
+student--> This message is quite crucial, so be careful while filling the gap to store it in a variable!!
+student--> message=________________ How are you?'
+student--> print(message)
+teacher--> Answer is '
+student--> Is this a right syntax?
+student--> message= ""Read this whole chapter at once", said teacher"
+student--> print(message)
+student--> options: Yes , No 
+teacher--> No, correct format is '"Read this whole chapter at once", said teacher'
+student--> Display the same message
+student--> Tomato	50Kg
+student--> Potato	20Kg
+student--> print(_____Tomato______50Kg_______Potato______20Kg")
+student--> Hint: use \n, \t 
+teacher--> Answer is print(__"___Tomato___\t___50Kg___\n____Potato___\t___20Kg")
+teacher--> Now time for some coding labs!!
+
+
+
+
+

@@ -1,15 +1,33 @@
-// Predefined chapters
+// script.js
+
+// Define the chapters to be added
 const predefinedChapters = [
     { name: "6. Data Type", fileName: "data_type.txt" },
-    { name: "7. naming a variable", fileName: "naming_a_variable.txt" },
-    { name: "8. operators 1", fileName: "operators_1.txt" },
-    { name: "9. operators 2", fileName: "operators_2.txt" },
+    { name: "7. Naming a Variable", fileName: "naming_a_variable.txt" },
+    { name: "8. Operators 1", fileName: "operators_1.txt" },
+    { name: "9. Operators 2", fileName: "operators_2.txt" },
     { name: "10. String 1", fileName: "string_1.txt" },
     { name: "11. String 2", fileName: "string_2.txt" },
-    { name: "24. while loop", fileName: "while_loop.txt" }
-    
-    
+    { name: "24. While Loop", fileName: "while_loop.txt" }
 ];
+
+// Function to initialize chapters
+function initializeChapters() {
+    return predefinedChapters;
+}
+
+function loadChapters() {
+    const chaptersDiv = document.getElementById('chapters');
+    chaptersDiv.innerHTML = ''; // Clear any existing chapter buttons
+    const chapters = initializeChapters();
+
+    chapters.forEach(chapter => {
+        const button = document.createElement('button');
+        button.textContent = chapter.name;
+        button.onclick = () => loadChapter(chapter.fileName, button);
+        chaptersDiv.appendChild(button);
+    });
+}
 
 // Function to load conversation from a text file
 async function loadConversation(fileName) {
@@ -38,18 +56,11 @@ function displayNextMessage() {
         const messageText = messageParts.join(' ').trim();
         const senderClass = sender.trim() === 'student' ? 'right' : 'left';
 
-        // Check if the last message element belongs to the same sender
-        const lastMessageElement = chatBox.lastElementChild;
-        if (lastMessageElement && lastMessageElement.classList.contains(senderClass)) {
-            lastMessageElement.innerHTML += `<br>${messageText}`;
-        } else {
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('message', senderClass);
-            messageElement.innerHTML = messageText;
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message', senderClass);
+        messageElement.textContent = messageText;
 
-            chatBox.appendChild(messageElement);
-        }
-
+        chatBox.appendChild(messageElement);
         chatBox.scrollTop = chatBox.scrollHeight;
         currentMessageIndex++;
     } else {
@@ -59,6 +70,7 @@ function displayNextMessage() {
 
 // Function to load a chapter and initialize the conversation
 function loadChapter(chapterFile, buttonElement) {
+    // Style the clicked button
     document.querySelectorAll('#chapters button').forEach(button => {
         button.style.backgroundColor = 'white';
         button.style.color = 'black';
@@ -69,6 +81,7 @@ function loadChapter(chapterFile, buttonElement) {
     buttonElement.style.color = 'white';
     buttonElement.style.border = '2px solid black';
 
+    // Load the conversation
     loadConversation(chapterFile).then(conversation => {
         messages = conversation;
         currentMessageIndex = 0;
@@ -78,35 +91,6 @@ function loadChapter(chapterFile, buttonElement) {
     });
 }
 
-function initializeChapters() {
-    const chapters = JSON.parse(localStorage.getItem('chapters')) || [];
-
-    // Add predefined chapters if not already present
-    predefinedChapters.forEach(predefinedChapter => {
-        if (!chapters.some(chapter => chapter.name === predefinedChapter.name)) {
-            chapters.push(predefinedChapter);
-        }
-    });
-
-    localStorage.setItem('chapters', JSON.stringify(chapters));
-    return chapters;
-}
-
-function loadChapters() {
-    const chaptersDiv = document.getElementById('chapters');
-    const chapters = initializeChapters();
-
-    chapters.forEach(chapter => {
-        const button = document.createElement('button');
-        button.textContent = chapter.name;
-        button.onclick = () => loadChapter(chapter.fileName, button);
-        chaptersDiv.appendChild(button);
-    });
-}
-
-document.getElementById('addChapterButton').addEventListener('click', function() {
-    window.location.href = 'add-chapter.html'; // Redirect to add-chapter.html
-});
-
-nextMessageButton.addEventListener('click', displayNextMessage);
+// Initialize chapters on page load
 loadChapters();
+nextMessageButton.addEventListener('click', displayNextMessage);

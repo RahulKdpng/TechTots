@@ -1,0 +1,86 @@
+student--> Hey man, How are you?
+teacher--> I'm good, bro. What about you?
+student--> same old. Trying to learn python.
+student--> Speaking of which, I got a doubt.
+teacher-->what is it?
+student-->Remember, last time we discussed that even numbers inside quotes are string?
+teacher-->yeah, Anything inside quotes is a string.
+student--> well if i do print("5" + 5), will python add them and display 10?
+teacher--> so you have been experimenting, huh?
+student-->yeah, just playing arounf with the things i know.
+teacher-->that is nice. but sadly, python won't do the addition.
+student--> I thought so. It will show an error, won't it?
+teacher--> uh-huh, as Python can not add a string and a number. but..
+teacher-->print("5"+5)
+teacher-->output: TypeError: can only concatenate str(not "int") to str
+student--> But what? Come on, spit it out! 
+teacher--> Keep calm and wait for it.
+teacher--> okay okay, i will tell you.
+teacher--> python has a feature that allows us to convert one type of value into another. 
+teacher--> and we call it type-casting.
+student-->ugh, another weird name. something simple name like a convertor would have worked fine.
+teacher--> you do have a point there.
+teacher--> but anyway, using this feature you can convert "5" to an integer.
+student--> that shoud do the work then.
+teacher--> It will, and this is how you do the conversion.
+teacher--> int("5")
+teacher--> int is a short for integer.
+student-->okay 
+teacher-->you can even check it's type to be sure.
+student--> check? but how?
+teacher-->with the feature type().
+teacher--> it tells you the type of any value. like this.
+teacher-->print(type("5"))
+teacher-->output: <class 'str'>
+student-->i'm guessing str means string.
+teacher-->Bullseye! Now, let's change the program a little.
+teacher--> print(type(int("5")))
+teacher-->output: <class 'int'>
+student--> oh, its an nteger now!
+teacher--> Told ya.
+student-->But dude, what if i did int('Hey')?
+teacher--> I knew your mischieveour mind would think of something.
+teacher-->int("Hey")
+teacher-->output: ValueError: invalid literal for int() with base 10: "Hey".
+teacher--> Turns out,Python ain't that dumb after all.
+student--> an error it is. Got it!
+teacher-->Now, int() can even convert a float number to an integer.
+teacher-->int(1.9)
+teacher-->output: 1
+student--> so it removes everything after the decimal point?
+teacher-->yo! and besides int(), there is also float() and str().
+student--> let me guess, float() converts a value into a decimal number.
+teacher-->yeah, but only if it will chnage into a valid float number.
+student-->so, float('1.2') will result in a decimal number 1.2 but float("1.2f") will not.
+teacher-->exactly! and using str(). we convert any value to a string.
+student--> that's obvious by now.
+teacher-->well, then, can you correct the program, print("5"+5), now?
+student-->yup and here it is!
+teacher-->print(int("5")+5)
+teacher-->output: 10
+teacher-->Good job!
+teacher-->But, what if I convert int to float? Like 6 to float. it doesn't have any decimal point or number.
+student-->look,
+teacher-->print(float(6))
+teacher-->output: 6.0
+student-->It will add a 0 after the decimal point to make it float.
+teacher--> great! i got a strange one!
+teacher--> can we convert int to boolean?
+student-->umm, yes! we can convert an integer into a boolean. It will return True if the integer is  either
+student-->positive or negative and False if the integer is Zero.
+teacher-->print(bool(25))
+teacher-->output: True
+teacher-->print(bool(0))
+teacher-->output: False 
+teacher-->that's great! I thought there was nothing like that!
+student-->Haha! There is so much you have to learn about python.
+student--> okay now tell me. Can we convert string to boolean?
+teacher-->umm, maybe!
+student-->we can look here
+teacher-->print(bool(""))
+teacher-->output: False
+teacher-->print(bool("Hello"))
+teacher-->output: True 
+student-->we can convert string to boolean, it will return False if the string is empty else it will return true.
+teacher-->so brilliant!!
+student-->Thanks.

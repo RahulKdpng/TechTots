@@ -1,5 +1,3 @@
-// script.js
-
 // Define the chapters to be added
 const predefinedChapters = [
     { name: "6. Data Type", fileName: "data_type.txt" },
@@ -24,9 +22,167 @@ function loadChapters() {
     chapters.forEach(chapter => {
         const button = document.createElement('button');
         button.textContent = chapter.name;
-        button.onclick = () => loadChapter(chapter.fileName, button);
+        button.onclick = () => authenticateUser(chapter);
         chaptersDiv.appendChild(button);
     });
+}
+
+// Function to authenticate user
+function authenticateUser(chapter) {
+    const modal = document.getElementById("authModal");
+    const closeButton = document.getElementsByClassName("close")[0];
+
+    modal.style.display = "block";
+
+    closeButton.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    document.getElementById("submitAuth").onclick = function() {
+        const username = document.getElementById("username").value;
+        const authKey = document.getElementById("authKey").value;
+
+        if (username && authKey) {
+            verifyCredentials(username, authKey)
+                .then(isValid => {
+                    if (isValid) {
+                        modal.style.display = "none";
+                        showChapterOptions(chapter);
+                    } else {
+                        alert("Invalid username or authentication key.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error verifying credentials:", error);
+                    alert("Error verifying credentials. Please try again.");
+                });
+        } else {
+            alert("Username and authentication key are required.");
+        }
+    };
+}
+
+// Simulated function to verify credentials
+async function verifyCredentials(username, authKey) {
+    // Replace this with actual authentication logic, e.g., API call
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(username === "1" && authKey === "1");
+        }, 1000);
+    });
+}
+
+// Function to show options for the selected chapter
+function showChapterOptions(chapter) {
+    const contentDiv = document.getElementById('contentContainer');
+    contentDiv.innerHTML = ''; // Clear existing content
+
+    const title = document.createElement('h2');
+    title.textContent = chapter.name;
+    contentDiv.appendChild(title);
+
+    const options = ['ChatBox', 'Quiz', 'Material'];
+    options.forEach(option => {
+        const optionDiv = document.createElement('div');
+        optionDiv.classList.add('option');
+        
+        const img = document.createElement('img');
+        img.src = `res/${option.toLowerCase()}.png`; // Ensure you have the images in the res folder
+        img.alt = option;
+        optionDiv.appendChild(img);
+
+        const text = document.createElement('span');
+        text.textContent = option;
+        optionDiv.appendChild(text);
+
+        optionDiv.onclick = () => {
+            if (option === 'ChatBox') {
+                loadConversation(chapter.fileName).then(conversation => {
+                    showChatBox(conversation);
+                });
+            } else if (option === 'Quiz') {
+                showQuiz(chapter.fileName); // Implement this function
+            } else if (option === 'Material') {
+                showMaterial(chapter.fileName); // Implement this function
+            }
+        };
+
+        contentDiv.appendChild(optionDiv);
+    });
+}
+
+// Function to display the chat box
+function showChatBox(conversation) {
+    const contentDiv = document.getElementById('contentContainer');
+    contentDiv.innerHTML = ''; // Clear existing content
+
+    const chatBox = document.createElement('div');
+    chatBox.id = 'chatBox';
+    chatBox.style.width = '100%';
+    chatBox.style.flex = '1';
+    chatBox.style.overflowY = 'auto';
+    chatBox.style.display = 'flex';
+    chatBox.style.flexDirection = 'column';
+    chatBox.style.alignItems = 'flex-start';
+    chatBox.style.marginBottom = '10px';
+    contentDiv.appendChild(chatBox);
+
+    const nextMessageButton = document.createElement('button');
+    nextMessageButton.id = 'nextMessageButton';
+    nextMessageButton.textContent = 'Next Message';
+    contentDiv.appendChild(nextMessageButton);
+
+    let messages = conversation;
+    let currentMessageIndex = 0;
+    let currentSender = '';
+    let messageContainer = null;
+
+    function displayNextMessage() {
+        if (currentMessageIndex < messages.length) {
+            const messageLine = messages[currentMessageIndex];
+            const [sender, ...messageParts] = messageLine.split('-->');
+            const messageText = messageParts.join(' ').trim();
+            const senderClass = sender.trim() === 'student' ? 'right' : 'left';
+
+            if (sender.trim() !== currentSender) {
+                currentSender = sender.trim();
+                messageContainer = document.createElement('div');
+                messageContainer.classList.add('message-container', senderClass);
+                chatBox.appendChild(messageContainer);
+            }
+
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message');
+            messageElement.textContent = messageText;
+            messageContainer.appendChild(messageElement);
+
+            chatBox.scrollTop = chatBox.scrollHeight;
+            currentMessageIndex++;
+        } else {
+            nextMessageButton.style.display = 'none';
+        }
+    }
+
+    nextMessageButton.addEventListener('click', displayNextMessage);
+    displayNextMessage();
+}
+
+// Function to display the quiz
+function showQuiz(fileName) {
+    // Implement this function to display the quiz
+    alert('Quiz option not implemented yet.');
+}
+
+// Function to display the material
+function showMaterial(fileName) {
+    // Implement this function to display the material
+    alert('Material option not implemented yet.');
 }
 
 // Function to load conversation from a text file
@@ -42,55 +198,5 @@ async function loadConversation(fileName) {
     }
 }
 
-let messages = [];
-let currentMessageIndex = 0;
-
-const chatBox = document.getElementById('chatBox');
-const nextMessageButton = document.getElementById('nextMessageButton');
-
-// Function to display the next message
-function displayNextMessage() {
-    if (currentMessageIndex < messages.length) {
-        const messageLine = messages[currentMessageIndex];
-        const [sender, ...messageParts] = messageLine.split('-->');
-        const messageText = messageParts.join(' ').trim();
-        const senderClass = sender.trim() === 'student' ? 'right' : 'left';
-
-        const messageElement = document.createElement('div');
-        messageElement.classList.add('message', senderClass);
-        messageElement.textContent = messageText;
-
-        chatBox.appendChild(messageElement);
-        chatBox.scrollTop = chatBox.scrollHeight;
-        currentMessageIndex++;
-    } else {
-        nextMessageButton.style.display = 'none';
-    }
-}
-
-// Function to load a chapter and initialize the conversation
-function loadChapter(chapterFile, buttonElement) {
-    // Style the clicked button
-    document.querySelectorAll('#chapters button').forEach(button => {
-        button.style.backgroundColor = 'white';
-        button.style.color = 'black';
-        button.style.border = '2px solid green';
-    });
-
-    buttonElement.style.backgroundColor = 'darkgreen';
-    buttonElement.style.color = 'white';
-    buttonElement.style.border = '2px solid black';
-
-    // Load the conversation
-    loadConversation(chapterFile).then(conversation => {
-        messages = conversation;
-        currentMessageIndex = 0;
-        chatBox.innerHTML = '';
-        nextMessageButton.style.display = 'block';
-        displayNextMessage();
-    });
-}
-
 // Initialize chapters on page load
 loadChapters();
-nextMessageButton.addEventListener('click', displayNextMessage);

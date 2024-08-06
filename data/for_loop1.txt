@@ -1,0 +1,92 @@
+student--> YOOO!!!
+teacher--> Super dude!! How did your hacking prank go??
+student--> Awesome!!man some of my friends totally freaked out.
+teacher--> Great!!
+student--> Yeah!! so, I remember you were telling me there are two types of loops.
+teacher--> Hmmm-mm one is the While loop and other is For loop 
+student--> Okayyyy
+teacher--> So, let me show a for loop example.
+teacher--> for num in range (0,10):
+teacher--> .    print(num)
+student--> Dude, the line 1 , is it something written in Latin??!!
+teacher--> No No, it is still a python instruction.
+teacher--> It tells python to repeat line 2 for numbers 0 to 9.
+student--> But How??
+teacher--> Okay, so basically Python runs the loop for each number in the range 0 to 10.
+teacher--> And here, num in line 1 is a variable.
+student--> Ohh!! So in a for loop. we create a variable just after the word for?
+teacher--> Exactly! and the loop starts with 0 Meaning num holds the value 0 in the first loop.
+teacher--> for num in range(0,5): #In loop1 num=0,
+teacher--> .     print(num)
+student--> yeah and next Python moves to line 2 and displays the value in num, i.e. 0.
+teacher--> Then it goes to line 1 again and startes the second loop.
+teacher--> But this time, num holds the second number in the range 0 to 5.
+student--> and that is 1!
+student--> for num in range (0,5): #in loop 2 , num=1.
+student--> .    print(num)
+teacher--> Right! and this way, python continues to loop until the number 4.
+student--> wait!! should not it be 5? means it is range 0 to 5, right?
+teacher--> ummmm!!! no cuz range 0 to 5 means it starts from 0 and ends at the number just before 5 i.e., 4.
+student--> so, number in the range are 0,1,2,3 and 4!!
+teacher--> yup!! and those are the numbers python displays here.
+teacher--> for num in range (0,5):
+teacher--> .     print(num)
+teacher--> output: 0
+teacher--> 1
+teacher--> 2
+teacher--> 3
+teacher--> 4
+student--> Hey, the for loop is pretty simple!!
+teacher--> yeah!! and we can make it even simpler like this.
+teacher--> for num in range(5):
+teacher--> print(num)
+student--> ahh!! so you changed range (0,5) to range(5) here, but, that does not make any sense!!
+student--> The range should have a starting and an ending point.
+teacher--> you are right!! It should have a starting point. That is why for range(5), python assumes 0 as the starting point.
+student--> Got it!!
+teacher--> Now, tell me what exactly is happening when we print numbers in the range 0 to 5.
+student--> ummm... we are printing 0 to 4. what is this question??
+teacher--> I will explain, so we are starting from 0 incrementing the value by 1 which becomes 0+1=1 and so on.
+student--> woooww, did not think in this way..
+teacher--> Not your fault, that little brain, could not think much.
+student--> HAHAHAHA!!! very funny.
+teacher--> Coming to the point now. I mentioned this because the range function has 3 parameters. start,end,step.
+student--> But we have only seen start and end.
+student--> for num in range(0,5):
+student--> Here starts=0 and end=5
+teacher--> Yes, but here the step by default is 1.
+teacher--> That means we are incrementing the variable num by 1 starting from the start and ending at the end parameters.
+teacher--> If we want to increment the variable with any other number apart from 1. we need to mention that value instead of step.
+student--> so, for example I want numbers from 0 to 20 with a gap of 2, how do I do it??
+teacher--> like this 
+teacher--> for num in range (0,21,2):
+teacher--> .     print(num)
+teacher--> output: 0
+teacher--> 2.....20
+teacher--> Here, the values have been incremented by 2 if you see.
+student--> woooww, that is co cool, but I have one more question.
+teacher--> spit it out!!
+student--> what if I want the decreasing sequence?
+student--> for example: I want to print all numbers from 10 to 1.
+teacher--> glad you asked this question.
+student--> ummm...
+teacher--> so, for decreasing series, we mention negative numbers in the step.
+teacher--> we start from the higher number and end at the lower number.
+student--> okayyyy
+teacher--> I will show..
+teacher--> for num in range (10,1,-1):
+teacher--> .   print(num)
+teacher--> output: 10,9,8.....2
+student--> OHHHH!! But I wanted till 1. the result shows up till 2.
+teacher--> yaya!! You noticed it!! Good.
+teacher--> Do you remember in the case of positive sequence if we want to stop at num we used to insert num+1 in the end parameter??
+student--> Yes, I do!! what about that??
+teacher--> So, in case of negative sequence we will insert num-1 in the end parameter to stop at num.
+student--> okayyy, this time let me try to make the changes.
+student--> for num in range (10,0,-1):
+student--> .   print(num)
+student--> output: 10,9,8....1
+teacher--> perfect!!
+student--> Great what is next??
+teacher--> We have a lot more in the for loop, but we will continue next time Byeee.
+student--> Byeee seee yaaaa!!

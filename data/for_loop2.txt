@@ -1,0 +1,88 @@
+teacher--> Hey man! What's up?
+student--> Is it a good time to ask what you were mentioning about the for a loop last time?
+teacher--> Well, it depends on why you want to know?
+student--> So, I came across this quiz on the internet containing a few questions.
+teacher--> And you want me to answer them for you?
+student--> Shut up and listen first
+teacher--> Fine, listening.
+student--> I think I need to know more about loops to solve them.
+teacher--> Okay, so it is a good time!
+teacher--> Let's start with the first question.
+student--> It says using "Strings with loops and range"
+teacher--> Oh-kay! That's a good one.
+teacher--> So, as you might remember string's index starts from O and the last index is len(string)-1
+teacher--> So, when you move from letter to letter in a string you move from index 0 to 1 to 2 and so on.
+teacher--> Do you think you can relate this with range() in for loop?
+student--> Um.... kinda Please guide me sensei
+teacher--> Okay! So, the range starts from index=0 and goes till index=len(string)-1 in order to print all the letters in the string.
+student--> So for index in range(0, len(string)): This is the format
+teacher--> Yep! Let's try this out.
+teacher--> word = "bumfuzzle"
+teacher--> for index in range(0, len(word)): 
+teacher--> .    print(word[index])
+student--> We will take an index from the range and keep printing the letter of the word at that index.
+student--> Okay This makes sense now.
+teacher--> But you know I have an easier way to print letters in the word.
+student--> This is exactly what the second question has asked as well.
+student--> To exclude the range function and print it exactly this way
+teacher--> Seems like I can see the future!
+student--> Yeah right! in your dreams!
+teacher--> Anyway, so instead of using range(), we mention the string and print it.
+teacher--> word = "Bumfuzzle" 
+teacher--> for letter in word:
+teacher--> .    print(letter)
+student--> umm..but...I don't get it.
+teacher--> Line 2 says, for letter in variable "word"
+teacher--> and our variable word has the string "bumfuzzle"
+teacher--> So, we take each letter from this word and print it. Simple.
+student--> You just made it easier! Now I get it!
+student--> I was wondering if we can make the for-loop work over a slice of a string?
+teacher--> Of course, we can.
+teacher--> I can guess it's the 3rd question in the quiz, right?
+student--> My my! You can guess as well.
+teacher--> Do you want your question solved or not?
+student--> Oops. I do. Please continue
+teacher--> Okay, so as you know we can slice our strings.
+student--> In the question, they asked to find a particular letter in the second half of the word.
+teacher--> So, in that case, first let us store our word in a variable:
+teacher--> word "bumfuzzle"
+student--> Next, we need to loop through the second half of the word
+teacher--> So we need to start slicing the word from half-length of the word.
+teacher--> word = "bumfuzzle" 
+teacher--> length = len(word)/2
+teacher--> half_word = word[length:]
+student--> How do we search the word in this now?
+teacher--> We'll need the conditions here
+teacher--> word "bumfuzzle"
+teacher--> length = len(word)/2
+teacher--> half_word =word[Length:]
+teacher--> for i in half_word:
+teacher--> .    if i=="z":
+teacher--> .           print("found")
+teacher--> Using the if we're checking if the current letter stored in i is equal to the letter we want to find.
+student--> Got it!
+student--> We have one last question left
+student--> And here they have asked to print the letters in reverse.
+teacher--> Easy peasy! We are gonna use all the things we have learned till now to solve the 4th question.
+teacher--> To print the reversed version of your string we will need to slice the string and for loop.
+student--> slicing, dicing, and reversing with a hint of the loop!! Sounds fun
+teacher--> So let's begin!
+teacher--> To reverse the string we need to use
+student--> It seems like -1 will be doing all the work in reversing the string.
+teacher--> So, now if we use the for loop over this.
+student--> It's going to print each letter in the reversed string.
+student--> I think I know how to write the code for this.
+student--> word = "bumfuzzle" 
+student--> for i in word[::-1]: 
+student--> .     print(i)
+teacher--> Seems like you were able to write it.
+teacher--> Let' see if it runs.
+teacher--> word = "bumfuzzle" 
+teacher--> for i in word[::-1]: 
+teacher--> .    print(i)
+teacher--> My my! It runs as well.
+student--> Don't underestimate me
+teacher--> I'm scared now!
+teacher--> But as of now, we are done with everything about for loops.
+student--> Thanks to you I was finally able to solve the quiz! And I got full marks as well.
+teacher--> You got half the marks because I did half of the work.

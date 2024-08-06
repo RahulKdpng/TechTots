@@ -1,0 +1,54 @@
+student--> Hey, man! Got some time?
+student--> And please, no jokes!
+teacher--> Won't have to this time.
+student--> What the heck do you mean by this time?!
+teacher--> Well, I got to see your reaction without even starting
+teacher--> So, what's bugging' ya?
+student--> Right. So, I came across a strange word today, f-string. And it got me curious.
+teacher--> Well, did you ease your curiosity?
+student--> That's what I'm doing' right now.
+teacher--> Smarty-pants!
+teacher--> But before we talk about f-strings, let's look at this small piece of code first.
+teacher--> fruit = "apples"
+teacher--> print("Get me %s." %fruit)
+teacher--> Any idea what's gonna happen here?
+student--> Of course! %s here has a very special task. Its job is to book a spot in a string, where we can insert a value.
+student--> So in the above program, the value of the variable fruit replaces %s in the string Get me %s.
+teacher--> fruit = "apples"
+teacher--> print("Get me %s." %fruit)
+teacher--> coding: Get me apples.
+teacher--> We call this feature as embedding.
+student--> Yup!! And in case we want to insert multiple values, we can do this
+student--> num = 5 
+student--> fruit ='apples'
+student--> print('I ate %s%s. '%(num, fruit))
+student--> output: Get me 5 apples.
+teacher--> We gotta be careful about the order in which we write the variable names, though.
+student--> I know, cuz if we mess up the order, Python displays a wrong message.
+teacher--> Cool! So now, let's talk about f-strings. Well, they're similar to embedding. So here is an example.
+teacher--> fruit = "apples"
+teacher--> print(f"Get me {fruit}.")
+teacher--> coding: Get me apples.
+teacher--> See the use of the variable fruit in line 2?
+student--> Yeah. You wrote it in between curly braces inside the string
+teacher--> fruit= "apples"
+teacher--> print(f"Get me {fruit}.")
+teacher--> See the use of variable fruit in line 2?
+student--> Yeah, you put it in between curly braces inside the string
+teacher--> That way, the variable's value replaces it in the output, as it happened with %s.
+student--> So wherever I wanna display a variable's value in a string, I just put its name inside curly braces there.
+teacher--> Yup! But remember to begin the string with an f outside the quotes.
+student--> Will do! Just like I did here!
+student--> num = 5
+student--> fruit= "apples"
+student--> print(f"I ate {num} {fruit).")
+student--> output: I ate 5 apples.
+teacher--> Great! And FYI, you can also put a math expression inside the braces.
+teacher--> print(f"{2 * 3}")
+teacher--> coding: 6
+student--> That's convenient!
+teacher--> Yeah. Besides, even a string in between the braces is alright.
+student--> That's neat! How you used different quotes for the main string and the string inside the braces.
+teacher--> Yup! Gotta be careful about that!
+student--> Thanks, dude! That was some solid info on Python.
+teacher--> Anytime Man!!

@@ -1,0 +1,124 @@
+student--> Hey, I had a weird realization today.
+teacher--> Oh, have you finally come to terms with your... Oops, said too much.
+student--> No, no, don't stop. Go on, say it
+teacher--> Ah, it wasn't anything important. You can continue with your realization.
+student--> Oi, you were thinking of something really mean, weren't you
+teacher--> hahaha
+student--> Darn it what did I ever do to you
+teacher--> It's not what you did, rather what you do.
+teacher--> Your reactions, man! I do it just to see how you react.
+student--> Ugh, you sadist Anyway, here's the thing. I was looking at this program.
+student--> name = 'Randal'
+student--> print('Hello,', name)
+student--> output: Hello, Randal
+student--> And it got me thinking.
+teacher--> YOU'VE BEEN THINKING A LOT LATELY
+student--> Ah well, I've got the brains to do it
+student--> So, whenever I run this program, it'll always give the same output
+teacher--> Yeah, which is Hello, Randal. And I think that's normal.
+student--> Of course, it is!
+student--> But I want the name to be different every time I run the program.
+teacher--> Oka-y. I'm listening.
+student--> But to do that, I'll have to change the value in the variable name:
+student--> And then run the program.
+student--> name = "Amy"
+student--> print('Hello', name)
+student--> output: Hello, Amy
+teacher--> That's one of the ways, yes. Too manual for my taste, though.
+student--> One of the ways? You saying' there is another way.
+teacher--> Mm-hmm, but let's put your brain through a twister first.
+teacher--> So tell me, how else do you imagine doing this?
+student--> Hmmmm!!!
+student--> Well, it'd be easier if I could somehow tell Python the name to display.
+student--> And of course, I don't mean when I'm writing the program. Instead, I tell the name when Python is running the program
+teacher--> Good job, cuz Python can do exactly that using the special feature input!
+student--> Then please, tell me mate!!
+teacher--> Well, as the name suggests, it's used to take input from a user.
+student--> Oh! So, I am guessing' Python can display the input it gets.
+teacher--> Right! And this is how we go about it.
+teacher--> name = input("Enter a name:") 
+teacher--> print('Hello', name)
+teacher--> output: Enter a name:
+teacher--> Here, line 1 makes Python display the message, enter your name: and wait.
+student--> For us to enter a name?
+teacher--> Yup! And when we do that, Python stores it in the variable name.
+student--> Got it!!
+teacher--> Next, line 2 displays this name.
+teacher--> name = input('Enter a name: ') 
+teacher--> print('Hello,', name)
+teacher--> output: Enter a name: Theo
+teacher--> Hello, Theo
+student--> Cool!! Now I can greet different people with this program.
+teacher--> Yes absolutely.
+teacher--> But, there are things way cooler!
+teacher--> Remember when you give usernames as input, sometimes we are asked everything in upper case.
+student--> Yes, and I end up entering it in lowercase. Happens to me every single time!!
+teacher--> Yes, and then the computer or website might give an error message.
+student--> Exactly! I wonder how does it check that.
+teacher--> Well, we have an option in python to check whether the string we entered is uppercase or lowercase.
+student--> Ohh, sounds good. But how???
+teacher--> We can check it using islower() and isupper().
+student--> Okay, looks pretty straightforward.
+student--> But what does it do and how?
+teacher--> Hold on mate. I will tell you.
+teacher--> So, when you use the islower() like this.
+teacher--> str1.isupper()
+teacher--> It returns True if the string in str1 is all lowercase else it returns False.
+student--> Okay so let me try this out, is this correct?
+student--> str1 = 'welcometooak'
+student--> print(str1.islower())
+student--> output: True
+teacher--> Yes, absolutely.
+student--> And let me guess if we use isupper() on the same string, it will return False, right?
+teacher--> Exactly, you are nailing it, dude.
+teacher--> Here you go, this is how it will be.
+teacher--> str1 = 'welcometooak' 
+teacher--> print(str1.isupper())
+teacher--> output: False
+student--> But, what if I have the string that is partly Lowercase and partly upper case?
+teacher--> Why don't you try it yourself?
+student--> Okay, let me try
+student--> str1= 'WelcomeToOak'
+student--> print(str1.islower()) 
+student--> print(str1.isupper())
+student--> output: False
+student--> output: False
+student--> It is False in both cases?
+teacher--> Yes, islower() and isupper() will return True or False based on the case of the entire string.
+student--> Cool! Is there any way we could convert it to the other?
+teacher--> Definitely! We have lower() and upper() for that
+teacher--> lower() converts the whole string into lowercase
+teacher--> upper() converts the whole string into uppercase
+teacher--> str1='Have A'
+teacher--> print(str1.lower())
+teacher--> output: have a
+teacher--> str2 ='NiceDay'
+teacher--> print(str2.upper())
+teacher--> output: NICEDAY
+student--> Nice, Python got some really amazing features!
+teacher--> Great! I will tell you one last thing about input
+teacher--> Python stores the input it gets as a string.
+student--> Hmm
+student--> So even if I ask for a number like this,
+student--> height= input('How tall are you: ') 
+student--> print('Height:", height)
+student--> The number entered will be stored as a string
+teacher--> Correct! In fact, let's check its type to be sure.
+teacher--> height =input("How tall are you: ') 
+teacher--> print("Height" , height)
+teacher--> print(type(height))
+teacher--> Now let's run it
+teacher--> output: How tall are you: 6 
+teacher--> Height: 6 
+teacher--> <class 'str'>
+student--> I see. The value in height is indeed a string
+student--> But hey what if I want it as a number?
+teacher--> In that case, you convert it to a number like this.
+teacher--> height = int(input('How tall are you: ')) 
+teacher--> print('Height:', height) 
+teacher--> print(type(height))
+teacher--> output: How tall are you: 6 
+teacher--> Height: 6 
+teacher--> <class 'int'>
+teacher--> See, the height is an integer now!
+student--> Thanks a lot, man. You gave me something nice in Python to play with.

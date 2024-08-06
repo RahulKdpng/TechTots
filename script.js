@@ -5,8 +5,12 @@ const predefinedChapters = [
     { name: "8. Operators 1", fileName: "operators_1.txt" },
     { name: "9. Operators 2", fileName: "operators_2.txt" },
     { name: "10. String 1", fileName: "string_1.txt" },
-    { name: "11. String 2", fileName: "string_2.txt" },
-    { name: "24. While Loop", fileName: "while_loop.txt" }
+    { name: "11. String 2", fileName: "string_2.txt" },    
+    { name: "12. Input & embedding 1", fileName: "Input1.txt" }, // New chapter
+    { name: "13. Input & embedding 2", fileName: "Input2.txt" }, // New chapter
+    { name: "24. While Loop", fileName: "while_loop.txt" },
+    { name: "26. for Loop 1", fileName: "for_loop1.txt" },
+    { name: "26. for Loop 2", fileName: "for_loop2.txt" }
 ];
 
 // Function to initialize chapters
@@ -73,7 +77,7 @@ async function verifyCredentials(username, authKey) {
     // Replace this with actual authentication logic, e.g., API call
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(username === "aw34r" && authKey === "kd");
+            resolve(username === "1" && authKey === "1");
         }, 1000);
     });
 }
@@ -191,7 +195,7 @@ async function loadConversation(fileName) {
         const response = await fetch(`data/${fileName}`);
         if (!response.ok) throw new Error('Network response was not ok');
         const text = await response.text();
-        return text.split('\n').map(line => line.trim()).filter(line => line);
+        return text.split('\n').map(line => line.replace(/<kd>/g, '  ').trim()).filter(line => line);
     } catch (error) {
         console.error('Error loading the conversation:', error);
         return [];

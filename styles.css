@@ -95,6 +95,9 @@ header h1 {
 
 #chapters {
     margin-top: 10px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns all child elements (buttons) to the left */

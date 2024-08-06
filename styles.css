@@ -272,5 +272,6 @@ footer {
     margin: 0; /* Remove margin between messages */
     font-size: 17px;
     line-height: 1.4;
+    white-space: pre-wrap;
     border: none; /* Remove border from individual messages */
 }

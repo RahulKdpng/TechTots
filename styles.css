@@ -176,6 +176,7 @@ header h1 {
 }
 
 /* Chatbox styles if needed */
+
 #chatBox {
     width: 100%;
     flex: 1;
@@ -188,6 +189,12 @@ header h1 {
     padding: 10px; /* Optional: Add some padding if needed */
 }
 
+.message img {
+    max-width: 100%; /* Ensure images fit within the chat box */
+    border-radius: 5px;
+    padding: 5px;
+    background: none; /* Remove background for images */
+}
 #nextMessageButton {
     width: 150px;
     height: 50px;

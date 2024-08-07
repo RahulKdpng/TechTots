@@ -1,10 +1,13 @@
 student--> SOS!!Help!!SOS!!
+cartoon--> fear_m
 teacher--> Hey!! stop Don't jump off the roof.
+cartoon--> funny_m
 student--> Ummmm!!! what?
 teacher--> Uh-Oh! did I guess wrong??
 student--> Why the hack would I jump off anywhere?
 teacher--> Er,um... you know.
 student--> No, I don't know. Ugh, You and your jokes!!
+cartoon--> fear_m
 student--> Anyway, does this program makes sense to you??
 student--> sum="5" + "5"
 student--> print(sum)
@@ -108,14 +111,16 @@ student--> Okay, so no multiplying strings with a float number. cool.
 teacher--> Now I got one Last thing to tell you. Look at this program.
 teacher--> string_one='ba'
 teacher--> string_two='na'
-teacher--> print(string_one + string_two * 2)
+teacher--> print(string_one + string_two * 2))
 teacher--> What will the Python display?
 student--> Well, do we apply BEMDAS here too?
 teacher--> Bingo!! Good job, buddy you are almost there.
 student--> Then it's simple! First, python will multiply.
 teacher--> And after that comes the addition. Correct!!
 student--> Perfect!! So hey, thanks for the help!!
+cartoon--> understanding_m
 teacher--> Quiz time now
+cartoon--> gotit_m
 student--> An enemy general plans an attack on your Army's base camp! You ask why to send the camp a warning. Fill in the gaps to see how she did it.
 student--> print("Enemy gets" (_____) (_______) )
 student--> option: + , * , "into camp" , into_camp

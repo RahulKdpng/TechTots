@@ -1,9 +1,14 @@
 student--> Knock, Knock!!
+cartoon--> understanding_m
 teacher--> Who is there?
+cartoon--> fear_m
 student--> A Scary Python!!
+cartoon--> naughty_m
 teacher--> uh-oh, what happened?
+cartoon--> ahh_m
 student--> Same old story. It's Python playing tricks on me!!
 teacher--> Again!!
+cartoon--> fear_m
 teacher--> Well, what happened this time?
 student--> Nothing much, I was just trying to display a simple message.
 student--> print('Hey! It's me')
@@ -57,7 +62,9 @@ teacher--> output: I met Marry.
 teacher--> She looks great
 student--> Exactly
 student--> But thanks for the help, man!!
+cartoon--> gotit_m
 teacher--> No problem, buddy!!
+cartoon--> claim_m
 teacher--> now quiz time!!
 student--> fill in the blanks to display the message at 1900 hours!!
 student--> message_start="Assemble at"
@@ -82,8 +89,3 @@ student--> print(_____Tomato______50Kg_______Potato______20Kg")
 student--> Hint: use \n, \t 
 teacher--> Answer is print(__"___Tomato___\t___50Kg___\n____Potato___\t___20Kg")
 teacher--> Now time for some coding labs!!
-
-
-
-
-

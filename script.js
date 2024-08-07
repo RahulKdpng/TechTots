@@ -79,7 +79,7 @@ async function verifyCredentials(username, authKey) {
     // Replace this with actual authentication logic, e.g., API call
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(username === "1" && authKey === "1");
+            resolve(username === "rahul" && authKey === "kd");
         }, 1000);
     });
 }

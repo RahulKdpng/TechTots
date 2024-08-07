@@ -1,4 +1,5 @@
 // Define the chapters to be added
+// Define the chapters to be added
 const predefinedChapters = [
     { name: "6. Data Type", fileName: "data_type.txt" },
     { name: "7. Naming a Variable", fileName: "naming_a_variable.txt" },
@@ -12,6 +13,7 @@ const predefinedChapters = [
     { name: "26. for Loop 1", fileName: "for_loop1.txt" },
     { name: "26. for Loop 2", fileName: "for_loop2.txt" }
 ];
+
 
 // Function to initialize chapters
 function initializeChapters() {
@@ -77,7 +79,7 @@ async function verifyCredentials(username, authKey) {
     // Replace this with actual authentication logic, e.g., API call
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(username === "rahul" && authKey === "kd");
+            resolve(username === "1" && authKey === "1");
         }, 1000);
     });
 }
@@ -122,7 +124,7 @@ function showChapterOptions(chapter) {
 }
 
 // Function to display the chat box
-function showChatBox(conversation) {
+async function showChatBox(conversation) {
     const contentDiv = document.getElementById('contentContainer');
     contentDiv.innerHTML = ''; // Clear existing content
 
@@ -151,8 +153,9 @@ function showChatBox(conversation) {
         if (currentMessageIndex < messages.length) {
             const messageLine = messages[currentMessageIndex];
             const [sender, ...messageParts] = messageLine.split('-->');
-            const messageText = messageParts.join(' ').trim();
-            const senderClass = sender.trim() === 'student' ? 'right' : 'left';
+            const messageText = messageParts.join(' ').trim().replace(/<kd>/g, ' '); // Replace <kd> with space
+            const senderClass = (sender.trim() === 'student' || sender.trim() === 'cartoon') ? 'right' : 'left';
+
 
             if (sender.trim() !== currentSender) {
                 currentSender = sender.trim();
@@ -161,10 +164,81 @@ function showChatBox(conversation) {
                 chatBox.appendChild(messageContainer);
             }
 
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('message');
-            messageElement.textContent = messageText;
-            messageContainer.appendChild(messageElement);
+            if (sender.trim() === 'cartoon') {
+                let imageName = '';
+                switch (messageText) {
+                    case 'naughty_m':
+                        imageName = 'cartoon/naughty_m.png';
+                        break;
+                    case 'claim_m':
+                        imageName = 'cartoon/claim_m.png';
+                        break;
+                    case 'gotit_m':
+                        imageName = 'cartoon/gotit_m.png';
+                        break;
+                    case 'understanding_m':
+                        imageName = 'cartoon/understanding_m.png';
+                        break;
+                    case 'love_m':
+                        imageName = 'cartoon/love_m.png';
+                        break;
+                    case 'funny_m':
+                        imageName = 'cartoon/funny_m.png';
+                        break;
+                    case 'fear_m':
+                        imageName = 'cartoon/fear_m.png';
+                        break;
+                    case 'ahh_m':
+                        imageName = 'cartoon/ahh_m.png';
+                        break;
+                    case 'naughty_f':
+                        imageName = 'cartoon/naughty_f.png';
+                        break;
+                    case 'claim_f':
+                        imageName = 'cartoon/claim_f.png';
+                        break;
+                    case 'happy_f':
+                        imageName = 'cartoon/happy_f.png';
+                        break;
+                    case 'understanding_f':
+                        imageName = 'cartoon/understanding_f.png';
+                        break;
+                    case 'dout_f':
+                        imageName = 'cartoon/dout_f.png';
+                        break;
+                    case 'funny_f':
+                        imageName = 'cartoon/funny_f.png';
+                        break;
+                    case 'enjy_f':
+                        imageName = 'cartoon/enjy_f.png';
+                        break;
+                    case 'fear_f':
+                        imageName = 'cartoon/fear_f.png';
+                        break;
+
+                    default:
+                        imageName = '';
+                        break;
+                }
+
+                if (imageName) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `res/${imageName}`;
+                    imgElement.alt = messageText;
+                    imgElement.classList.add('message');
+                    messageContainer.appendChild(imgElement);
+                } else {
+                    const messageElement = document.createElement('pre'); // Use <pre> for preformatted text
+                    messageElement.classList.add('message');
+                    messageElement.textContent = messageText;
+                    messageContainer.appendChild(messageElement);
+                }
+            } else {
+                const messageElement = document.createElement('pre'); // Use <pre> for preformatted text
+                messageElement.classList.add('message');
+                messageElement.textContent = messageText;
+                messageContainer.appendChild(messageElement);
+            }
 
             chatBox.scrollTop = chatBox.scrollHeight;
             currentMessageIndex++;
@@ -177,29 +251,27 @@ function showChatBox(conversation) {
     displayNextMessage();
 }
 
-// Function to display the quiz
-function showQuiz(fileName) {
-    // Implement this function to display the quiz
-    alert('Quiz option not implemented yet.');
-}
-
-// Function to display the material
-function showMaterial(fileName) {
-    // Implement this function to display the material
-    alert('Material option not implemented yet.');
-}
-
 // Function to load conversation from a text file
 async function loadConversation(fileName) {
     try {
         const response = await fetch(`data/${fileName}`);
         if (!response.ok) throw new Error('Network response was not ok');
         const text = await response.text();
-        return text.split('\n').map(line => line.replace(/<kd>/g, '  ').trim()).filter(line => line);
+        return text.split('\n').map(line => line.trim()).filter(line => line);
     } catch (error) {
         console.error('Error loading the conversation:', error);
         return [];
     }
+}
+
+// Function to show quiz (to be implemented)
+function showQuiz(fileName) {
+    // Implement quiz functionality here
+}
+
+// Function to show material (to be implemented)
+function showMaterial(fileName) {
+    // Implement material functionality here
 }
 
 // Initialize chapters on page load

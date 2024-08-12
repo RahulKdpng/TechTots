@@ -1,0 +1,93 @@
+teacher--> Hey!! buddy whatsup!!
+student--> Hey!! I was learning about strings in Python
+teacher--> Anything new you got to know??
+student--> Just going through some of the concepts 
+teacher--> Okay let me see how much you know then
+student--> Try it out!! I am sure I will be able to answer them all!!
+teacher--> That so? Well then, do you know we can even access the characters in a string.
+teacher--> Like 'H' in the funny_name = 'Hughie'.
+student--> Sure do!! And to know the position of the letters in 'Hughie' here, Python gives a number to each letter of a string.
+teacher--> Hm, you do know. Nice!
+student--> Yup! So here, Python numbers the letters in 'Hughie', and it starts the numbering from 0.
+teacher--> Right! So 'H' is numbered as 0, 'u' as 1, and so on.
+teacher--> Well, wanna guess the output here?
+teacher--> greeting="Bonjour madame"
+teacher--> print(greeting[7])
+student--> Damn right I wanna!!
+student--> So with greeting[7], we're trying to access the seventh index.
+teacher--> You're off to a good start!
+student--> Thanks!
+student--> So Python will display the eighth character. And that's a space!
+teacher--> You sure Python will count the space too?
+student--> Well, it's a part of the string. So yeah, it'll
+teacher--> Just testing' ya!
+teacher--> And by the way, here's another one.
+teacher--> prince_name = 'Prince Poppy'
+teacher--> print(name.index('p')
+student--> Too easy, man! Cuz I know the feature Index() gives us the position of a character in a string.
+teacher--> Gimme the output, dude, not the explanation,
+student--> Then, here is the indexing of 'Prince Poppy'
+teacher--> The letter 'p' is at positions 9 and 10. Umm, we should get one of 'em.
+teacher--> Well, which is it, 9 or 10?
+student--> ummm, lemme thinnk!! Python is logical. right?
+student--> It should be!! So, I guess it will pick the first index, 9!!
+teacher--> Well, it does pick the first index at which a repeating letter appears.
+teacher--> But, I see a 'P' at index 0, which is before 9.
+student--> And Python is case sensitive. So, to get the position of 'P', you gotta do this!
+student--> funny_prince = 'Prince_Poppy'
+student--> print(funny_prince.index('P'))
+student--> output: 0
+student--> Now we get the index of the first 'P', which is 0!
+teacher--> Seems like, you remember it all.
+student--> Duh! I'm a smart one after all!
+teacher--> Well then, "smart one", you must also know about negative indexes.
+student--> Whaat??!!!
+teacher--> O you heard it right, buddy! Negative indexes.
+student--> Okay, I got no idea what that is. Please throw some on it
+teacher--> Well, if you insist.
+teacher--> So. Python numbers the characters of a string in two ways, forwards and backward..
+student--> He does? 
+teacher--> Mm-hmm. And while numbering backward, Python gives the characters a negative index.
+teacher--> And it starts the numbering from-1 as it goes backwards.
+student--> That means, to get the last letter I can do this,
+student--> funny_prince ='Prince Poppy'
+student--> print(funny_prince[-1])
+student--> output: y
+teacher--> Yup, you do that.
+student--> Man, that was easy!
+teacher--> Finally, there's one last thing to it.
+student--> I'm all ears
+teacher--> Okay then, let's start with you guessing' the output here.
+teacher--> greeting ="Hey, man!"
+teacher--> greeting[0] = 'C'
+teacher--> print(greeting)
+student--> Well, logically speaking' greeting[0] = C should replace the first letter in "Hey, man
+student--> So, we should get Cey, man
+teacher--> It certainly looks that way Mr. Logical. But, Python does not allow us to change any character in a string.
+student--> The heck, man!!!!
+teacher--> I know the feeling'. Still, we'll get an error here.
+teacher--> greeting = "Hey, man!"
+teacher--> greeting[0] = 'C'
+teacher--> print(greeting)
+teacher--> output: TypeError: 'str' object does not support item assignment
+student--> Thanks for the heads up, man!!!!!
+teacher--> quiz time now!!
+student--> Alya is taking an online Python quiz. She needs to pick the right ones from the options below, but she is stuck. Help her get out of the jam!
+student--> choose correct option
+student--> a. We can't use negative indexes in Python.
+student--> b. If a 'bowyang', a[-6] displays 'o'.
+student--> c. If a bowyang', a[-6] displays 'b".
+student--> d. Negative indexing starts from -1.
+teacher--> option b and d are correct
+teacher--> In Python, we can use negative indexes. It starts from -1. So, a[-1] is 'g, a[-2] is 'n' and so on. That's why al-6] is o
+student--> Alya wants to mix indexing with concatenation to display her initials A and J. Fill in the gaps to help her make the right mixture!
+student--> name = "Alya Jones"
+student--> print(name[ ________ ] + name[ ______ ])
+teacher--> answer is 0 and 5
+teacher--> Python replaces name[0] with A, the first letter in Alya and name[5] with the sixth letter J. print(name[0] + name[5]) -> print('A' +') -> print('A').
+student--> Alya has mastery in strings now. So, Joey gives her a simple question to solve. And proving her claim, Alya solves it right! Let's guess her output.
+student--> word = "Yer Diddled!"
+student--> d_index = word.index("d")
+student--> print(d_index)
+teacher--> answer is 6
+teacher--> let's have coding now!!

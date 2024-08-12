@@ -9,6 +9,7 @@ const predefinedChapters = [
     { name: "11. String 2", fileName: "string_2.txt" },    
     { name: "12. Input & embedding 1", fileName: "Input1.txt" }, // New chapter
     { name: "13. Input & embedding 2", fileName: "Input2.txt" }, // New chapter
+    { name: "14. String Indexing 1", fileName: "String_Index1.txt" },
     { name: "24. While Loop", fileName: "while_loop.txt" },
     { name: "26. for Loop 1", fileName: "for_loop1.txt" },
     { name: "26. for Loop 2", fileName: "for_loop2.txt" }

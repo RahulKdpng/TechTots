@@ -1,0 +1,122 @@
+teacher--> [Aspropirgos Attikis) (safety) from 2510 (Charleville) (safety) from 470380000 t [Charleville] (safety) from 470380000 t BBC PORTUGAL (safety) Lyngby Radio Capetown (safety) from 477715000 test Charleville (safety) code: 533411000 J3 477715000 (safety) from Capetown test 477715000 (safety) from Capetown test 636090723 (safety) from Lyngby Radio te MRCC Las Palmas (safety) from PRIMROSE Lyngby Radio (safety) from 354968000 te Goteborg (safety) from PRIMROSE test R
+student--> What What the heck is this, dude
+teacher--> A tricky game, ya know.
+teacher--> Anyway, the goal is to find a secret word hidden in this forest of words.
+student--> So what's the secret word?
+teacher--> It starts with the word code.
+student--> Okay, gimme a minute.
+teacher--> Sure!! But plz hurry, cuz I'm running out time.
+student--> Roger that!
+student--> Hey, I found it
+teacher--> That was fast
+student--> I am Heckerman you know 
+teacher--> Hmmmm..show off but thanks to you..I own!!
+student--> Congrats, man!
+student--> But you know, this game reminds me of a special feature in Python.
+teacher--> Oh, which one?
+student--> It's called find().
+teacher--> Hmm-Does it help find something?
+student--> My god, how did you guess that?!
+teacher--> Ha-ha. Very funny.
+student--> Well, you're right. Using find, we can look for any character in a string, like this.
+student--> string='starry sky'
+student--> print(string.find('a'))
+student--> This gives us the index of the 'a' in the string 'starry sky'.
+teacher--> And that's 2!!
+teacher--> string = 'starry sky' 
+teacher--> print(string.find('a'))
+teacher--> output: 2
+teacher--> Hm, I gotta say, it's a cool feature!
+student--> Right? Also, it can even help us look for a word in a string, like here.
+student--> line ='Kate on her skateboard!'
+student--> print(line.find('Kate'))
+student--> output: 0
+teacher--> What the heck happened here?
+student--> Well, Python looked for 'Kate' in the line and gave us its starting index.
+teacher--> And that's O! It's brilliant! But dude, I gotta doubt.
+teacher--> What if the word I am lookin' for is not there in the string?
+student--> In that case, Python gives us -1.
+student--> line ='Kate on her skateboard!'
+student--> print(line.find('Katie'))
+student--> output: -1
+teacher--> But, index numbers cannot be negative!!
+student--> Yeah, which kinda means that the string does not have the word.
+teacher--> Makes sense.
+student--> Mm-hmm. So, what do you think this will give us?
+student--> line='Kate on her skateboard!'
+student--> print(line.find('kate'))
+teacher--> Um, the 'k' of 'kate' starts at index 13. So, that's what we'll get, 13!
+student--> But dude, there is a 'Kate' that starts at index 07
+teacher--> Nuh-uh, it won't be 0 cuz Python is case sensitive. So it looks for 'kate' with a small 'k' and not a capital 'K'.
+student--> woow woow!!
+teacher--> Thanks, I guess.
+teacher--> But hey, what about print(string.find('ate'))?| see two 'ate' here.
+student--> Remember how the feature index() works when the same letter appears twice in a string?
+teacher--> Mm-hm. It gives us the index number of the first appearance of the letter in the string.
+student--> Well, there you have it.
+teacher--> Oh! So we get the starting index number of the first appearance of 'ate' in the line.
+student--> Exactly! And it'll be 1.
+student--> line='Kate on her skateboard!'
+student--> print(line.find('ate"))
+student--> output: 1
+teacher--> But what if I want to find the position of the second "ate"? Is it possible?
+student--> Anything is possible with Python. We surely can do that.
+teacher--> Really!! Tell me how.
+student--> Well, we just need to modify the find() function a bit.
+teacher--> Listening...
+student--> The modification goes like this- string.find(substring, start)
+student--> The start here indicates the starting point of searching. For example-
+student--> Line ="Kate on her skateboard!" 
+student--> print(line.find('ate,2))
+student--> output: 14
+teacher--> Wha..How..um???
+student--> Hahaha, I loved your reaction. Okay, let me put it in a simple way.
+student--> The number 2 here indicates that you have to start searching from index number 2.
+student--> "ate" appears at index 1 and if you start searching for "ate" you'll get the next available "ate".
+teacher--> Oh! I get it. So from index 2. we get "te on her skateboard",
+teacher--> and when it searches for "ate", it takes the index of "a" of the next "ate".
+student--> Correct! So, when you count from the beginning, the index of "ate" will be 14.
+teacher--> Yay! Understood.
+student--> Now, do you know just like we put restrictions on the starting point, we can do the same with the ending point as well
+teacher--> Really?
+student--> Yes, do you remember slicing in a string?
+teacher--> Yes of course! String[start:end] takes the string from index-start to index-end-1
+student--> Absolutely! find() also does the same.
+student--> line ='Kate on her skateboard!' 
+student--> print(line.find('on', 2,11))
+student--> output: 5
+student--> The find function will now search in the sliced string (substring) starting from index-2 and ending at index= 11-1=10
+student--> i.e. searching in line[2:10].
+teacher--> So, does that mean Python finds in the string "te on her"?
+student--> That's right! So, if I want to search for "sk" in this string. I will get a -1, which means?
+teacher--> "sk" is not there in the substring "te on her"
+teacher--> line ="Kate on her skateboard!" 
+teacher--> print(line.find('sk',2,11))
+teacher--> output: -1
+teacher--> Wow, that is so cool.
+student--> I know right.
+teacher--> Yep! Super excited to learn more.
+student--> Let's meet tomorrow.
+teacher--> Sure. Enjoy your game.
+teacher--> Quiz Timw Now!!!!!
+student--> Lisa is suspicious of A! And she decides to make sure that A does not call its younger brother too. So, is the output here -1?
+student--> hideAndSeek= 'BCABC'
+student--> print(hideAndSeek.find('a'))
+student--> option 1: Yes
+student--> option 2: No
+teacher--> Correct Answer is yes
+teacher--> The letter 'a' is not there in 'BCABC'. So Python will give -1, meaning it did not find 'a' in the string.
+student--> B asks its younger brother b to join too. So now, Lisa gotta look for the younger ones too! Fill in the gap to show how.
+student--> hideAndSeek = "BCABC"
+student--> print(hideAndSeek.find(___))
+student--> option 1: 'b'
+student--> option 2: 'B'
+teacher--> Correct Answer is option 1
+teacher--> The instruction hideAndSeek.find('b') will make Python look for 'b' in 'BCABC' and give its index number, 3.
+student--> Lisa is after the letter A! Fill in the gaps to see the instruction Lisa used to find A.
+student--> hideAndSeek = 'B AC'
+student--> hideAndSeek.______('A')
+teacher--> Correct Answer s find
+teacher--> The feature find() helps us look for a letter in any string. And to use it, we first write the variable name. Then we put a dot. Next, comes the word find. And finally, we write the letter we're looking for in between brackets.
+teacher--> now coding time.....!!!!!
+

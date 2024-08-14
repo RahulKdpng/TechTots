@@ -1,0 +1,122 @@
+student--> Hey man, I came across a weird index number today.
+teacher--> Okay, I'm a bit confused here. 
+teacher--> How can a number be weird?
+student--> Cuz it's got a colon in it. See.
+student--> word= 'helipad'
+student--> print(word[2:6])
+teacher--> Oh, that! Well, you see, it's not exactly an index number
+student--> Whatt
+student--> But it's written just like it, 
+student--> inside square brackets beside the string's name.
+teacher--> Yeah. But there are two numbers here, 2 and 6 , with a colon.
+student--> So what does that mean?
+teacher--> Well, what'll happen if we do this?
+teacher--> word= "helipad"
+teacher--> word[3]
+student--> We get the fourth character in the string.
+teacher--> word ="helinad"
+teacher--> print(word[3])
+teacher--> output: i
+teacher--> Meaning, if we give one index number, we get one letter.
+student--> Mm-hmm
+teacher--> But when we write word [2:6], we give Python more than one index number.
+student--> So lemme guess, [2:6] gives us all the letters at these indexes in 'helipad'
+teacher--> Voila! We'll get the letters from index 2 to 5.
+student--> You mean 6, right?
+teacher--> No, I mean 5.
+teacher--> Well, that's how it is. Python ignores the letter at 
+teacher--> the ending number, ie the one at index 6 here
+student--> Cool. So basically, with [2:6], I get a part of the string.
+teacher--> Exactly!
+student--> word = 'helipad'
+student--> print(word[2:6])
+student--> output: lipa
+teacher--> We call this part a substring and the feature of 
+teacher--> gettin' small parts of a string as slicing.
+student--> That's okay. But dude, how do I get the last Letter?
+teacher--> Well, Python has got two ways of doin' that. One is, 
+teacher--> you don't write anything after the colon.
+student--> Oh, you mean no ending number? Yeah, that's a great solution!!!!
+teacher--> No man, seriously. Here, take a look.
+teacher--> word = 'helipad'
+teacher--> print(word[2:])
+teacher--> output: lipad
+student--> Damn, it actually worked!!
+teacher--> Yeah, and that's cuz Python automatically takes the 
+teacher--> index of the last letter as the endpoint here.
+student--> So if I'm right, not givin' a starting number, means 
+student--> Python will take the index of the first character in the string
+teacher--> Exactly!
+teacher--> word = 'helipad'
+teacher--> print(word[:6])
+teacher--> output: helipa
+student--> I knew it! But, you said there is another way of displaying the last letter.
+teacher--> Yeah, you set the length of the string as the endpoint.
+student--> You mean the number of letters in the string?
+teacher--> Yup!!!!!
+student--> Well, I'm not interested in countin characters
+teacher--> Then it's a good thing Python has len().
+student--> And what the heck is that?!
+teacher--> O it tells the number of characters in a string. So look and be amazed, buddy.
+teacher--> word = 'helipad'
+teacher--> print(len(word))
+teacher--> output: 7
+teacher--> You just gotta write the variable name 
+teacher--> that holds the string inside the brackets of len().
+student--> Crazy! So lemme use the length and try this
+student--> word ="helipad"
+student--> length = len(word) 
+student--> print(word [2:length])
+student--> output: lipad
+student--> Here, length holds the number of letters in 
+student--> 'helipad. So, word [2:length] becomes 
+student--> word [2:7]
+student--> And we got the letters from the index 2 to 6 
+student--> i.e. 7-1!!
+teacher--> Which includes the last letter in 'helipad'.
+teacher--> Now, I've one last thing for you..
+student--> Well, it's one hell of a goodbye gift
+student--> So what does this do?
+teacher--> Let's start with print(word[:]). Wanna guess 
+teacher--> what it'll display?
+student--> Hmm. No starting and ending number, huh. 
+student--> So word[:] should become word [0:Len(word)]
+student--> Meaning, we'll get the entire string.
+teacher--> You're right!
+teacher--> word= 'helipad'
+teacher--> print(word[:])
+teacher--> output: helipad
+teacher--> And now to print(word[:]).
+teacher--> Next, it hops over i and displays p, somethin' like this.
+student--> So basically, it skips the letter after the one it displays!
+teacher--> Mm-hm. And it skips one letter every time 
+teacher--> because of the number 2.
+teacher--> word = 'helipad'
+teacher--> print(word[::2])
+teacher--> output: hlpd
+student--> Wait, so if I write in 'helipad?
+teacher--> Mm-hmm. Then it displays i and skips two 
+teacher--> letters again.
+student--> Thanks, for makin' it all crystal clear!
+teacher--> QUIZ TIME!!!!!!!!
+student--> John challenges Lola with the word waterfall. 
+student--> Fill in the blanks to get the Length of the hidden words 
+student--> and add 'em to calculate the points.
+student--> word = "waterfall"
+student--> word_1 = word[:5]
+student--> word_2 = word[5:]
+student--> points =_______(word_1)+_______(_______)
+student--> options: Length,len,Len,word_2,length
+teacher--> answer: len,len,word_2
+teacher--> We use len to find a string's length in Python and 
+teacher--> write the variable name that holds the string in between
+teacher--> brackets after len
+student--> It's Lola's turn, and she gives the word therapy to John.
+student--> John finds the hidden word which is her. 
+student--> Fill in the gaps to slice the word out!
+student--> word = "therapy"
+student--> word_1 = word[_______:_______]
+student--> points = len(word_1)
+teacher--> answer is 1:4
+teacher--> The starting index of her is 1 as letter h is at index 1 in string therapy.
+teacher--> And the ending index will be 4 as the index of letter r is 3.

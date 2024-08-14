@@ -1,0 +1,91 @@
+student--> Hey, did I ever tell you I like writing?
+teacher--> No. No, you did not
+student--> Well, here is the thing. I love writing!
+student--> And lately, I've been working on an essay.
+teacher--> Good for ya, man! But, any reason why 
+teacher--> you decided to declare your love all of a sudden?
+student--> Well, you see, halfway through the essay 
+student--> I realized I've used 'recieve' instead of 'receive'.
+teacher--> Ugh, that word!
+teacher--> I can't imagine the number of times 
+teacher--> I've gotten it wrong.
+student--> O I hear ya, buddy. So, is there anything I can 
+student--> do about it?
+teacher--> Yeah, go through your essay and change its spelling.
+student--> Like I didn't think of that.
+teacher--> Oh, you mean an easier solution?
+student--> Obviously! Like somethin' in Python that could help.
+teacher--> Know what, you're right! We can use Python here.
+student--> And that's why I freakin' love Python!
+teacher--> So, Python has a feature called replace().
+teacher--> Using it, you can change one word to another 
+teacher--> in any string.
+student--> Awesome, man!
+teacher--> And here is how we use it.
+teacher--> line= "O'really? bababa!" 
+teacher--> print(line.replace('ba', 'ha'))
+teacher--> coding: O'really? hahaha!
+student--> Ah, Python replaced all 'ba' with 'ha'! Perfect!
+teacher--> Yeah. But remember, the first word in the 
+teacher--> bracket is the one you wanna replace in the string.
+student--> Right, and that's 'ba' here! While the second 
+student--> word in the bracket, 'ha', replaces the first one.
+teacher--> Yep!
+student--> So hey, I had a li'l doubt. What if I wanna 
+student--> replace just the first 2 'ba' and not all of 'em?
+student--> Is there a way in Python, hm?
+teacher--> Ah, there is always a way in Python. 
+teacher--> Remember, I said this before.
+student--> Yeah, yeah, smarty pants!
+teacher--> Well, to replace just 2 'ba', we'll have to give 
+teacher--> the count of replacements like this.
+teacher--> line= "O'really? bababa!"
+teacher--> print(line.replace('ba', 'ha', 2))
+teacher--> coding: O'really? hahaba!
+student--> Hmm~
+student--> So here, Python changed the first two 'ba' to 
+student--> 'ha' cuz of the number 2 in the second line.
+teacher--> Exactly!
+teacher--> And if I wrote 1. Python would replace just 
+teacher--> the first 'ba' in the line.
+student--> Yeah, I thought so!
+student--> line = "O'really? bababa!"
+student--> print(line.replace('ba', 'ha', 1))
+student--> output: O'really? hababa!
+teacher--> Great! So, wanna know another cool feature?
+student--> Sure do.
+teacher--> line = 'I saw Dave on his bicycle.' 
+teacher--> print(line.replace('Dave', 'Donna'). replace('his', 'her'))
+teacher--> output: 'I saw Donna on her bicycle.'
+student--> I see. It replaced both 'Dave' and 'his' in one go.
+teacher--> Yeah, Python executes the two replace()
+teacher--> instructions one after the other.
+teacher--> So first, it replaces 'Dave' by 'Donna', 
+teacher--> changin' the line to - I saw Donna on his bicycle.
+student--> Right! Then in this new line, it changes 'his' to 'her'.
+teacher--> Bingo!
+student--> Cool! And now, I'm gonna go and fix my essay!
+teacher--> Yeah, run off to your beloved! And stay true to her, okay?
+student--> Will do!!
+teacher--> QUIZ TIME NOW!!!!!
+student--> Fill in the blanks so that star is replaced with car.
+student--> poem = "twinkle, twinkle, little star
+student--> how I wonder what you are""
+student--> print(______.______(______,______))
+student--> options:  'star' ,poem  , 'car', replace
+teacher--> Correct Answer is poem , replace , 'star' , 'car'
+teacher--> To replace 'star', we start with the variable. 
+teacher--> Then we put a dot. Next comes the word replace. 
+teacher--> And inside the brackets, we first write 'star', 
+teacher--> then comes the word that will replace it, 'car'.
+student--> Fill in the blanks so that 'world' is replaced to 'hill' and 'diamond' to 'butterfly'.
+student--> verse = "up above the world so high 
+student--> like a diamond in the sky"
+student--> print(verse.______('world',______).______('diamond'.______))
+student--> options are replace, 'butterfly' , 'hill' .
+teacher--> Correct Answer is replace, 'hill' , 'butterfly'
+teacher--> We can use multiple replace methods in one line. 
+teacher--> So, in verse.replace('world','hill').replace('diamond', 'butterfly'), 
+teacher--> the first replace will change 'world' to 'hill'. 
+teacher--> And the second one will change 'diamond' to 'butterfly'.
+

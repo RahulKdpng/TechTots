@@ -1,48 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechTots</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Techtots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="HomeSection.css">
+    <link rel="stylesheet" href="aboutSection.css">
+    <link rel="stylesheet" href="coursesSection.css">
+    <link rel="stylesheet" href="joinNowSection.css">
 </head>
 <body>
-    <header>
-        <img src="res/LOGO.png" alt="Logo" id="logo">
-        <h1 id="title" style="font-size: 150%;">Python Class</h1>
-    </header>
-    <div id="mainContainer">
-        <div id="devSide">
-            <p>Chapters</p>
-            <div id="chapters">
-                <!-- Ensure this div is empty -->
+
+<!-- header start -->
+
+<!-- Topbar Start -->
+<div class="container-fluid topbar  d-none d-xl-block w-100" style="background-color: #17300e;">
+    <div class="container" >
+        <div class="row gx-0 align-items-center" style="height: 45px; " >
+            <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+                <div class="d-flex flex-wrap" >
+                    <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt me-2" style="color: rgb(23, 255, 39);"></i>Find A Location</a>
+                    <a href="tel:+01234567890" class="text-muted me-4"><i class="fas fa-phone-alt me-2" style="color: rgb(23, 255, 39);"></i>+91-7903538546</a>
+                    <a href="mailto:dhnrahul@gmail.com" class="text-muted me-0"><i class="fas fa-envelope me-2" style="color: rgb(23, 255, 39);"></i>Dhnrahul@gmail.com</a>
+                </div>
             </div>
-            
-            <button id="addChapterButton">Add Chapter</button>
-        </div>
-        
-        <div id="contentContainer">
-            <!-- This container will be updated with chapter options -->
-            <div id="authModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Authentication</h2>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" placeholder="Enter your username"><br><br>
-                    <label for="authKey">Authentication Key:</label>
-                    <input type="password" id="authKey" placeholder="Enter your authentication key"><br><br>
-                    <button id="submitAuth">Submit</button>
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="d-flex align-items-center justify-content-end">
+                    <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-facebook-f" style="color: rgb(10, 110, 15);"></i></a>
+                    <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i class="fab fa-twitter" style="color: rgb(10, 110, 15);"></i></a>
+                    <a href="https://www.instagram.com/techtots_ind" class="btn btn-light btn-sm-square rounded-circle me-3" target="_self" ><i class="fab fa-instagram" style="color: rgb(10, 110, 15);"></i></a>
+                    <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in" style="color: rgb(10, 110, 15);"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2024 TechTots | Sushmita's Academy</p>
-    </footer>
-    <script src="script.js"></script>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-11" style="color: green;"><img src="res/LOGO.png" alt="home Image"></h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="#homeSection" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#coursesSection" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Course</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="feature.html" class="dropdown-item">Python</a>
+                            <a href="cars.html" class="dropdown-item">HTML</a>
+                            <a href="team.html" class="dropdown-item">C</a>
+                            <a href="testimonial.html" class="dropdown-item">JavaScript</a>
+                            <a href="404.html" class="dropdown-item">JAVA</a>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                    <a href="python.html" class="nav-item nav-link">Teacher Login</a>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Get Started</a>
+            </div>
+        </nav>
+    </div>
+</div><!-- header End -->
+
+<main>
+    <div id="mainContainer">
+        <section id="homeSection">
+            
+            <div class="home-image">
+                <img src="res/Home.png" alt="home Image">
+            </div>
+            
+        </section>
+
+        <section id="coursesSection">
+            <div class="title-image">
+                <img src="res/courses.png" alt="Title Image">
+            </div>
+            <div class="courses-container">
+                <div class="course-box">
+                    <img src="res/cicon.png" alt="Course Icon">
+                    <h3>C</h3>
+                    <p>Interactive lessons designed for kids. Engaging projects and simple, clear instructions make programming easy and enjoyable!</p>
+                </div>
+                <div class="course-box">
+                    <img src="res/htmlicon.png" alt="Course Icon">
+                    <h3>HTML</h3>
+                    <p>Interactive, fun teaching for kids with colorful visuals, engaging activities, and clear, simple instructions for learning.                    </p>
+                </div>
+                <div class="course-box">
+                    <img src="res/picon.png" alt="Course Icon">
+                    <h3>Python</h3>
+                    <p>Fun coding with games and projects! Learn Python basics, solve puzzles, and bring ideas to life.
+                    </p>
+                </div>
+                <div class="course-box">
+                    <img src="res/cicon.png" alt="Course Icon">
+                    <h3>Title-C</h3>
+                    <p>Interactive lessons designed for kids. Engaging projects and simple, clear instructions make programming easy and enjoyable!</p>
+                </div>
+            </div>
+        </section>
+        </section>
+            <section id="joinNowSection">
+            <h2>Join Now</h2>
+            <!-- Content for Join Now -->
+        </section>
+    </div>
+</main>
+
+<footer>
+    &copy; 2024 Techtots. All rights reserved.
+</footer>
+<script src="main.js"></script>
 </body>
 </html>

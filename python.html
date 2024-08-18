@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTots</title>
+    <link rel="stylesheet" href="python-styles.css">
+</head>
+<body>
+    <header>
+        <img src="res/LOGO.png" alt="Logo" id="logo">
+        <h1 id="title" style="font-size: 150%;">Python Class</h1>
+    </header>
+    <div id="mainContainer">
+        <div id="devSide">
+            <p>Chapters</p>
+            <div id="chapters">
+                <!-- Ensure this div is empty -->
+            </div>
+            
+            <button id="addChapterButton">Add Chapter</button>
+        </div>
+        
+        <div id="contentContainer">
+            <!-- This container will be updated with chapter options -->
+            <div id="authModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Authentication</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username"><br><br>
+                    <label for="authKey">Authentication Key:</label>
+                    <input type="password" id="authKey" placeholder="Enter your authentication key"><br><br>
+                    <button id="submitAuth">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TechTots | Sushmita's Academy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

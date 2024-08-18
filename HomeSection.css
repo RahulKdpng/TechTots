@@ -1,0 +1,16 @@
+.homeSection {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.home-image {
+    margin-bottom: 30px;
+}
+
+.home-image img {
+    width: 100%; /* Adjust this percentage as needed */
+    max-width: 8000px; /* Adjust the max-width as needed */
+    height: auto;
+    object-fit: cover; /* Maintains aspect ratio while covering container */
+}
